@@ -2,6 +2,14 @@
 # yarn lockfile v1
 
 
+"@types/micro@^7.3.1":
+  version "7.3.1"
+  resolved "https://registry.yarnpkg.com/@types/micro/-/micro-7.3.1.tgz#d40a47b7ee680f7183f3052d36fa2ed7a118e2f9"
+
+"@types/node@^9.6.5":
+  version "9.6.5"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-9.6.5.tgz#ee700810fdf49ac1c399fc5980b7559b3e5a381d"
+
 ask-sdk-core@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ask-sdk-core/-/ask-sdk-core-2.0.0.tgz#c867318a153ee1caff82d2731ba44f3d48170536"
