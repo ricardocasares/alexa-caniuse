@@ -5,20 +5,27 @@
   "author": "Ricardo Casares <ricardocasares@gmail.com> (http://analogic.al/)",
   "license": "MIT",
   "scripts": {
-    "watch": "yarn build --watch",
-    "build": "tsc",
-    "start": "micro"
+    "dev": "run-s tsc watch",
+    "watch": "run-p tsc:watch start:watch",
+    "build": "run-s tsc model",
+    "tsc": "tsc",
+    "tsc:watch": "tsc --watch",
+    "start": "micro",
+    "start:watch": "micro-dev",
+    "model": "node .build/generator.js > model.json"
   },
   "dependencies": {
     "ask-sdk-core": "^2.0.0",
     "ask-sdk-model": "^1.0.1",
     "caniuse-api": "^2.0.0",
     "micro": "^9.1.4",
+    "npm-run-all": "^4.1.2",
     "tslib": "^1.9.0"
   },
   "devDependencies": {
     "@types/micro": "^7.3.1",
     "@types/node": "^9.6.5",
+    "micro-dev": "^2.2.2",
     "typescript": "^2.8.1"
   }
 }
