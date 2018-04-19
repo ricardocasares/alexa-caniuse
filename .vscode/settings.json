@@ -1,6 +1,3 @@
 {
-  "editor.formatOnSave": true,
-  "files.exclude": {
-    "**/*.js": { "when": "$(basename).ts" }
-  }
+  "editor.formatOnSave": true
 }
