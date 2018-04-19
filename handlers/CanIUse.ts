@@ -2,7 +2,7 @@ import * as api from "caniuse-api";
 import * as Alexa from "ask-sdk-core";
 import { IntentRequest } from "ask-sdk-model";
 import { intents } from "../lib/guards";
-import { toSlotID } from "../lib/helpers";
+import { toSlotID, humanReadable } from "../lib/helpers";
 
 const CanIUseRequest: Alexa.RequestHandler = {
   canHandle: intents("CanIUse"),
@@ -18,11 +18,11 @@ const CanIUseRequest: Alexa.RequestHandler = {
         .reprompt("tell me a feature")
         .getResponse();
     }
-
-    const support = api.getSupport(toSlotID(feature));
+    const { id, name } = toSlotID(feature);
+    const support = humanReadable(api.getSupport(id));
 
     return responseBuilder
-      .speak("Welcome to Can I Use")
+      .speak(support)
       .reprompt("Ask me about a CSS property")
       .getResponse();
   }
