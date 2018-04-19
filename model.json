@@ -1,3019 +1,3023 @@
 {
-  "invocationName": "can i use",
-  "intents": [
-    {
-      "name": "AMAZON.CancelIntent",
-      "samples": []
-    },
-    {
-      "name": "AMAZON.HelpIntent",
-      "samples": []
-    },
-    {
-      "name": "AMAZON.StopIntent",
-      "samples": []
-    },
-    {
-      "name": "CanIUse",
-      "slots": [
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "can i use",
+      "intents": [
         {
-          "name": "feature",
-          "type": "Features"
+          "name": "AMAZON.CancelIntent",
+          "samples": []
         },
         {
-          "name": "browser",
-          "type": "Browsers"
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "CanIUse",
+          "slots": [
+            {
+              "name": "feature",
+              "type": "Features"
+            },
+            {
+              "name": "browser",
+              "type": "Browsers"
+            }
+          ],
+          "samples": [
+            "for {feature}",
+            "if I can use {feature}",
+            "can i use {feature}",
+            "is {feature} supported in {browser}",
+            "{feature} in {browser}"
+          ]
         }
       ],
-      "samples": [
-        "for {feature}",
-        "if I can use {feature}",
-        "can i use {feature}",
-        "is {feature} supported in {browser}",
-        "{feature} in {browser}"
-      ]
-    }
-  ],
-  "types": [
-    {
-      "name": "Browsers",
-      "values": [
-        {
-          "id": "and_chr",
-          "name": {
-            "value": "Chrome for Android"
-          }
-        },
-        {
-          "id": "and_ff",
-          "name": {
-            "value": "Firefox for Android"
-          }
-        },
-        {
-          "id": "and_qq",
-          "name": {
-            "value": "QQ Browser for Android"
-          }
-        },
-        {
-          "id": "and_uc",
-          "name": {
-            "value": "UC Browser for Android"
-          }
-        },
-        {
-          "id": "android",
-          "name": {
-            "value": "Android"
-          }
-        },
-        {
-          "id": "baidu",
-          "name": {
-            "value": "Baidu"
-          }
-        },
-        {
-          "id": "bb",
-          "name": {
-            "value": "BlackBerry Browser"
-          }
-        },
-        {
-          "id": "chrome",
-          "name": {
-            "value": "Google Chrome"
-          }
-        },
-        {
-          "id": "edge",
-          "name": {
-            "value": "Microsoft Edge"
-          }
-        },
-        {
-          "id": "firefox",
-          "name": {
-            "value": "Mozilla Firefox"
-          }
-        },
-        {
-          "id": "ie",
-          "name": {
-            "value": "Internet Explorer"
-          }
-        },
-        {
-          "id": "ie_mob",
-          "name": {
-            "value": "Internet Explorer Mobile"
-          }
-        },
-        {
-          "id": "ios_saf",
-          "name": {
-            "value": "iOS Safari"
-          }
-        },
-        {
-          "id": "op_mini",
-          "name": {
-            "value": "Opera Mini"
-          }
-        },
-        {
-          "id": "op_mob",
-          "name": {
-            "value": "Opera Mobile"
-          }
-        },
-        {
-          "id": "opera",
-          "name": {
-            "value": "Opera"
-          }
-        },
-        {
-          "id": "safari",
-          "name": {
-            "value": "Safari"
-          }
-        },
-        {
-          "id": "samsung",
-          "name": {
-            "value": "Samsung Internet"
-          }
-        }
-      ]
-    },
-    {
-      "name": "Features",
-      "values": [
-        {
-          "id": "aac",
-          "name": {
-            "value": "aac"
-          }
-        },
-        {
-          "id": "ac3-ec3",
-          "name": {
-            "value": "ac3 ec3"
-          }
-        },
-        {
-          "id": "addeventlistener",
-          "name": {
-            "value": "addeventlistener"
-          }
-        },
-        {
-          "id": "alternate-stylesheet",
-          "name": {
-            "value": "alternate stylesheet"
-          }
-        },
-        {
-          "id": "ambient-light",
-          "name": {
-            "value": "ambient light"
-          }
-        },
-        {
-          "id": "apng",
-          "name": {
-            "value": "apng"
-          }
-        },
-        {
-          "id": "array-includes",
-          "name": {
-            "value": "array includes"
-          }
-        },
-        {
-          "id": "arrow-functions",
-          "name": {
-            "value": "arrow functions"
-          }
-        },
-        {
-          "id": "asmjs",
-          "name": {
-            "value": "asmjs"
-          }
-        },
-        {
-          "id": "async-functions",
-          "name": {
-            "value": "async functions"
-          }
-        },
-        {
-          "id": "async-iterations-and-generators",
-          "name": {
-            "value": "async iterations and generators"
-          }
-        },
-        {
-          "id": "atob-btoa",
-          "name": {
-            "value": "atob btoa"
-          }
-        },
-        {
-          "id": "audio-api",
-          "name": {
-            "value": "audio api"
-          }
-        },
-        {
-          "id": "audio",
-          "name": {
-            "value": "audio"
-          }
-        },
-        {
-          "id": "audiotracks",
-          "name": {
-            "value": "audiotracks"
-          }
-        },
-        {
-          "id": "autofocus",
-          "name": {
-            "value": "autofocus"
-          }
-        },
-        {
-          "id": "auxclick",
-          "name": {
-            "value": "auxclick"
-          }
-        },
-        {
-          "id": "background-attachment",
-          "name": {
-            "value": "background attachment"
-          }
-        },
-        {
-          "id": "background-img-opts",
-          "name": {
-            "value": "background img opts"
-          }
-        },
-        {
-          "id": "background-position-x-y",
-          "name": {
-            "value": "background position x y"
-          }
-        },
-        {
-          "id": "background-repeat-round-space",
-          "name": {
-            "value": "background repeat round space"
-          }
-        },
-        {
-          "id": "background-sync",
-          "name": {
-            "value": "background sync"
-          }
-        },
-        {
-          "id": "battery-status",
-          "name": {
-            "value": "battery status"
-          }
-        },
-        {
-          "id": "beacon",
-          "name": {
-            "value": "beacon"
-          }
-        },
-        {
-          "id": "beforeafterprint",
-          "name": {
-            "value": "beforeafterprint"
-          }
-        },
-        {
-          "id": "blobbuilder",
-          "name": {
-            "value": "blobbuilder"
-          }
-        },
-        {
-          "id": "bloburls",
-          "name": {
-            "value": "bloburls"
-          }
-        },
-        {
-          "id": "border-image",
-          "name": {
-            "value": "border image"
-          }
-        },
-        {
-          "id": "border-radius",
-          "name": {
-            "value": "border radius"
-          }
-        },
-        {
-          "id": "broadcastchannel",
-          "name": {
-            "value": "broadcastchannel"
-          }
-        },
-        {
-          "id": "brotli",
-          "name": {
-            "value": "brotli"
-          }
-        },
-        {
-          "id": "calc",
-          "name": {
-            "value": "calc"
-          }
-        },
-        {
-          "id": "canvas-blending",
-          "name": {
-            "value": "canvas blending"
-          }
-        },
-        {
-          "id": "canvas-text",
-          "name": {
-            "value": "canvas text"
-          }
-        },
-        {
-          "id": "canvas",
-          "name": {
-            "value": "canvas"
-          }
-        },
-        {
-          "id": "ch-unit",
-          "name": {
-            "value": "ch unit"
-          }
-        },
-        {
-          "id": "chacha20-poly1305",
-          "name": {
-            "value": "chacha20 poly1305"
-          }
-        },
-        {
-          "id": "channel-messaging",
-          "name": {
-            "value": "channel messaging"
-          }
-        },
-        {
-          "id": "childnode-remove",
-          "name": {
-            "value": "childnode remove"
-          }
-        },
-        {
-          "id": "classlist",
-          "name": {
-            "value": "classlist"
-          }
-        },
-        {
-          "id": "client-hints-dpr-width-viewport",
-          "name": {
-            "value": "client hints dpr width viewport"
-          }
-        },
-        {
-          "id": "clipboard",
-          "name": {
-            "value": "clipboard"
-          }
-        },
-        {
-          "id": "comparedocumentposition",
-          "name": {
-            "value": "comparedocumentposition"
-          }
-        },
-        {
-          "id": "console-basic",
-          "name": {
-            "value": "console basic"
-          }
-        },
-        {
-          "id": "console-time",
-          "name": {
-            "value": "console time"
-          }
-        },
-        {
-          "id": "const",
-          "name": {
-            "value": "const"
-          }
-        },
-        {
-          "id": "constraint-validation",
-          "name": {
-            "value": "constraint validation"
-          }
-        },
-        {
-          "id": "contenteditable",
-          "name": {
-            "value": "contenteditable"
-          }
-        },
-        {
-          "id": "contentsecuritypolicy",
-          "name": {
-            "value": "contentsecuritypolicy"
-          }
-        },
-        {
-          "id": "contentsecuritypolicy2",
-          "name": {
-            "value": "contentsecuritypolicy2"
-          }
-        },
-        {
-          "id": "cors",
-          "name": {
-            "value": "cors"
-          }
-        },
-        {
-          "id": "credential-management",
-          "name": {
-            "value": "credential management"
-          }
-        },
-        {
-          "id": "cryptography",
-          "name": {
-            "value": "cryptography"
-          }
-        },
-        {
-          "id": "css-all",
-          "name": {
-            "value": "css all"
-          }
-        },
-        {
-          "id": "css-animation",
-          "name": {
-            "value": "css animation"
-          }
-        },
-        {
-          "id": "css-any-link",
-          "name": {
-            "value": "css any link"
-          }
-        },
-        {
-          "id": "css-appearance",
-          "name": {
-            "value": "css appearance"
-          }
-        },
-        {
-          "id": "css-apply-rule",
-          "name": {
-            "value": "css apply rule"
-          }
-        },
-        {
-          "id": "css-at-counter-style",
-          "name": {
-            "value": "css at counter style"
-          }
-        },
-        {
-          "id": "css-backdrop-filter",
-          "name": {
-            "value": "css backdrop filter"
-          }
-        },
-        {
-          "id": "css-background-offsets",
-          "name": {
-            "value": "css background offsets"
-          }
-        },
-        {
-          "id": "css-backgroundblendmode",
-          "name": {
-            "value": "css backgroundblendmode"
-          }
-        },
-        {
-          "id": "css-boxdecorationbreak",
-          "name": {
-            "value": "css boxdecorationbreak"
-          }
-        },
-        {
-          "id": "css-boxshadow",
-          "name": {
-            "value": "css boxshadow"
-          }
-        },
-        {
-          "id": "css-canvas",
-          "name": {
-            "value": "css canvas"
-          }
-        },
-        {
-          "id": "css-caret-color",
-          "name": {
-            "value": "css caret color"
-          }
-        },
-        {
-          "id": "css-case-insensitive",
-          "name": {
-            "value": "css case insensitive"
-          }
-        },
-        {
-          "id": "css-clip-path",
-          "name": {
-            "value": "css clip path"
-          }
-        },
-        {
-          "id": "css-color-adjust",
-          "name": {
-            "value": "css color adjust"
-          }
-        },
-        {
-          "id": "css-conic-gradients",
-          "name": {
-            "value": "css conic gradients"
-          }
-        },
-        {
-          "id": "css-containment",
-          "name": {
-            "value": "css containment"
-          }
-        },
-        {
-          "id": "css-counters",
-          "name": {
-            "value": "css counters"
-          }
-        },
-        {
-          "id": "css-crisp-edges",
-          "name": {
-            "value": "css crisp edges"
-          }
-        },
-        {
-          "id": "css-cross-fade",
-          "name": {
-            "value": "css cross fade"
-          }
-        },
-        {
-          "id": "css-default-pseudo",
-          "name": {
-            "value": "css default pseudo"
-          }
-        },
-        {
-          "id": "css-descendant-gtgt",
-          "name": {
-            "value": "css descendant gtgt"
-          }
-        },
-        {
-          "id": "css-deviceadaptation",
-          "name": {
-            "value": "css deviceadaptation"
-          }
-        },
-        {
-          "id": "css-dir-pseudo",
-          "name": {
-            "value": "css dir pseudo"
-          }
-        },
-        {
-          "id": "css-display-contents",
-          "name": {
-            "value": "css display contents"
-          }
-        },
-        {
-          "id": "css-element-function",
-          "name": {
-            "value": "css element function"
-          }
-        },
-        {
-          "id": "css-exclusions",
-          "name": {
-            "value": "css exclusions"
-          }
-        },
-        {
-          "id": "css-featurequeries",
-          "name": {
-            "value": "css featurequeries"
-          }
-        },
-        {
-          "id": "css-filter-function",
-          "name": {
-            "value": "css filter function"
-          }
-        },
-        {
-          "id": "css-filters",
-          "name": {
-            "value": "css filters"
-          }
-        },
-        {
-          "id": "css-first-letter",
-          "name": {
-            "value": "css first letter"
-          }
-        },
-        {
-          "id": "css-first-line",
-          "name": {
-            "value": "css first line"
-          }
-        },
-        {
-          "id": "css-fixed",
-          "name": {
-            "value": "css fixed"
-          }
-        },
-        {
-          "id": "css-focus-visible",
-          "name": {
-            "value": "css focus visible"
-          }
-        },
-        {
-          "id": "css-focus-within",
-          "name": {
-            "value": "css focus within"
-          }
-        },
-        {
-          "id": "css-font-rendering-controls",
-          "name": {
-            "value": "css font rendering controls"
-          }
-        },
-        {
-          "id": "css-font-stretch",
-          "name": {
-            "value": "css font stretch"
-          }
-        },
-        {
-          "id": "css-gencontent",
-          "name": {
-            "value": "css gencontent"
-          }
-        },
-        {
-          "id": "css-gradients",
-          "name": {
-            "value": "css gradients"
-          }
-        },
-        {
-          "id": "css-grid",
-          "name": {
-            "value": "css grid"
-          }
-        },
-        {
-          "id": "css-hanging-punctuation",
-          "name": {
-            "value": "css hanging punctuation"
-          }
-        },
-        {
-          "id": "css-has",
-          "name": {
-            "value": "css has"
-          }
-        },
-        {
-          "id": "css-hyphenate",
-          "name": {
-            "value": "css hyphenate"
-          }
-        },
-        {
-          "id": "css-hyphens",
-          "name": {
-            "value": "css hyphens"
-          }
-        },
-        {
-          "id": "css-image-orientation",
-          "name": {
-            "value": "css image orientation"
-          }
-        },
-        {
-          "id": "css-image-set",
-          "name": {
-            "value": "css image set"
-          }
-        },
-        {
-          "id": "css-in-out-of-range",
-          "name": {
-            "value": "css in out of range"
-          }
-        },
-        {
-          "id": "css-indeterminate-pseudo",
-          "name": {
-            "value": "css indeterminate pseudo"
-          }
-        },
-        {
-          "id": "css-initial-letter",
-          "name": {
-            "value": "css initial letter"
-          }
-        },
-        {
-          "id": "css-initial-value",
-          "name": {
-            "value": "css initial value"
-          }
-        },
-        {
-          "id": "css-letter-spacing",
-          "name": {
-            "value": "css letter spacing"
-          }
-        },
-        {
-          "id": "css-line-clamp",
-          "name": {
-            "value": "css line clamp"
-          }
-        },
-        {
-          "id": "css-logical-props",
-          "name": {
-            "value": "css logical props"
-          }
-        },
-        {
-          "id": "css-marker-pseudo",
-          "name": {
-            "value": "css marker pseudo"
-          }
-        },
-        {
-          "id": "css-masks",
-          "name": {
-            "value": "css masks"
-          }
-        },
-        {
-          "id": "css-matches-pseudo",
-          "name": {
-            "value": "css matches pseudo"
-          }
-        },
-        {
-          "id": "css-media-interaction",
-          "name": {
-            "value": "css media interaction"
-          }
-        },
-        {
-          "id": "css-media-resolution",
-          "name": {
-            "value": "css media resolution"
-          }
-        },
-        {
-          "id": "css-media-scripting",
-          "name": {
-            "value": "css media scripting"
-          }
-        },
-        {
-          "id": "css-mediaqueries",
-          "name": {
-            "value": "css mediaqueries"
-          }
-        },
-        {
-          "id": "css-mixblendmode",
-          "name": {
-            "value": "css mixblendmode"
-          }
-        },
-        {
-          "id": "css-motion-paths",
-          "name": {
-            "value": "css motion paths"
-          }
-        },
-        {
-          "id": "css-namespaces",
-          "name": {
-            "value": "css namespaces"
-          }
-        },
-        {
-          "id": "css-not-sel-list",
-          "name": {
-            "value": "css not sel list"
-          }
-        },
-        {
-          "id": "css-nth-child-of",
-          "name": {
-            "value": "css nth child of"
-          }
-        },
-        {
-          "id": "css-opacity",
-          "name": {
-            "value": "css opacity"
-          }
-        },
-        {
-          "id": "css-optional-pseudo",
-          "name": {
-            "value": "css optional pseudo"
-          }
-        },
-        {
-          "id": "css-overflow-anchor",
-          "name": {
-            "value": "css overflow anchor"
-          }
-        },
-        {
-          "id": "css-overscroll-behavior",
-          "name": {
-            "value": "css overscroll behavior"
-          }
-        },
-        {
-          "id": "css-page-break",
-          "name": {
-            "value": "css page break"
-          }
-        },
-        {
-          "id": "css-paged-media",
-          "name": {
-            "value": "css paged media"
-          }
-        },
-        {
-          "id": "css-paint-api",
-          "name": {
-            "value": "css paint api"
-          }
-        },
-        {
-          "id": "css-placeholder-shown",
-          "name": {
-            "value": "css placeholder shown"
-          }
-        },
-        {
-          "id": "css-placeholder",
-          "name": {
-            "value": "css placeholder"
-          }
-        },
-        {
-          "id": "css-read-only-write",
-          "name": {
-            "value": "css read only write"
-          }
-        },
-        {
-          "id": "css-rebeccapurple",
-          "name": {
-            "value": "css rebeccapurple"
-          }
-        },
-        {
-          "id": "css-reflections",
-          "name": {
-            "value": "css reflections"
-          }
-        },
-        {
-          "id": "css-regions",
-          "name": {
-            "value": "css regions"
-          }
-        },
-        {
-          "id": "css-repeating-gradients",
-          "name": {
-            "value": "css repeating gradients"
-          }
-        },
-        {
-          "id": "css-resize",
-          "name": {
-            "value": "css resize"
-          }
-        },
-        {
-          "id": "css-revert-value",
-          "name": {
-            "value": "css revert value"
-          }
-        },
-        {
-          "id": "css-rrggbbaa",
-          "name": {
-            "value": "css rrggbbaa"
-          }
-        },
-        {
-          "id": "css-scroll-behavior",
-          "name": {
-            "value": "css scroll behavior"
-          }
-        },
-        {
-          "id": "css-scrollbar",
-          "name": {
-            "value": "css scrollbar"
-          }
-        },
-        {
-          "id": "css-sel2",
-          "name": {
-            "value": "css sel2"
-          }
-        },
-        {
-          "id": "css-sel3",
-          "name": {
-            "value": "css sel3"
-          }
-        },
-        {
-          "id": "css-selection",
-          "name": {
-            "value": "css selection"
-          }
-        },
-        {
-          "id": "css-shapes",
-          "name": {
-            "value": "css shapes"
-          }
-        },
-        {
-          "id": "css-snappoints",
-          "name": {
-            "value": "css snappoints"
-          }
-        },
-        {
-          "id": "css-sticky",
-          "name": {
-            "value": "css sticky"
-          }
-        },
-        {
-          "id": "css-supports-api",
-          "name": {
-            "value": "css supports api"
-          }
-        },
-        {
-          "id": "css-table",
-          "name": {
-            "value": "css table"
-          }
-        },
-        {
-          "id": "css-text-align-last",
-          "name": {
-            "value": "css text align last"
-          }
-        },
-        {
-          "id": "css-text-indent",
-          "name": {
-            "value": "css text indent"
-          }
-        },
-        {
-          "id": "css-text-justify",
-          "name": {
-            "value": "css text justify"
-          }
-        },
-        {
-          "id": "css-text-orientation",
-          "name": {
-            "value": "css text orientation"
-          }
-        },
-        {
-          "id": "css-text-spacing",
-          "name": {
-            "value": "css text spacing"
-          }
-        },
-        {
-          "id": "css-textshadow",
-          "name": {
-            "value": "css textshadow"
-          }
-        },
-        {
-          "id": "css-touch-action-2",
-          "name": {
-            "value": "css touch action 2"
-          }
-        },
-        {
-          "id": "css-touch-action",
-          "name": {
-            "value": "css touch action"
-          }
-        },
-        {
-          "id": "css-transitions",
-          "name": {
-            "value": "css transitions"
-          }
-        },
-        {
-          "id": "css-unicode-bidi",
-          "name": {
-            "value": "css unicode bidi"
-          }
-        },
-        {
-          "id": "css-unset-value",
-          "name": {
-            "value": "css unset value"
-          }
-        },
-        {
-          "id": "css-variables",
-          "name": {
-            "value": "css variables"
-          }
-        },
-        {
-          "id": "css-widows-orphans",
-          "name": {
-            "value": "css widows orphans"
-          }
-        },
-        {
-          "id": "css-writing-mode",
-          "name": {
-            "value": "css writing mode"
-          }
-        },
-        {
-          "id": "css-zoom",
-          "name": {
-            "value": "css zoom"
-          }
-        },
-        {
-          "id": "css3-attr",
-          "name": {
-            "value": "css3 attr"
-          }
-        },
-        {
-          "id": "css3-boxsizing",
-          "name": {
-            "value": "css3 boxsizing"
-          }
-        },
-        {
-          "id": "css3-colors",
-          "name": {
-            "value": "css3 colors"
-          }
-        },
-        {
-          "id": "css3-cursors-grab",
-          "name": {
-            "value": "css3 cursors grab"
-          }
-        },
-        {
-          "id": "css3-cursors-newer",
-          "name": {
-            "value": "css3 cursors newer"
-          }
-        },
-        {
-          "id": "css3-cursors",
-          "name": {
-            "value": "css3 cursors"
-          }
-        },
-        {
-          "id": "css3-tabsize",
-          "name": {
-            "value": "css3 tabsize"
-          }
-        },
-        {
-          "id": "currentcolor",
-          "name": {
-            "value": "currentcolor"
-          }
-        },
-        {
-          "id": "custom-elements",
-          "name": {
-            "value": "custom elements"
-          }
-        },
-        {
-          "id": "custom-elementsv1",
-          "name": {
-            "value": "custom elementsv1"
-          }
-        },
-        {
-          "id": "customevent",
-          "name": {
-            "value": "customevent"
-          }
-        },
-        {
-          "id": "datalist",
-          "name": {
-            "value": "datalist"
-          }
-        },
-        {
-          "id": "dataset",
-          "name": {
-            "value": "dataset"
-          }
-        },
-        {
-          "id": "datauri",
-          "name": {
-            "value": "datauri"
-          }
-        },
-        {
-          "id": "details",
-          "name": {
-            "value": "details"
-          }
-        },
-        {
-          "id": "deviceorientation",
-          "name": {
-            "value": "deviceorientation"
-          }
-        },
-        {
-          "id": "devicepixelratio",
-          "name": {
-            "value": "devicepixelratio"
-          }
-        },
-        {
-          "id": "dialog",
-          "name": {
-            "value": "dialog"
-          }
-        },
-        {
-          "id": "dispatchevent",
-          "name": {
-            "value": "dispatchevent"
-          }
-        },
-        {
-          "id": "do-not-track",
-          "name": {
-            "value": "do not track"
-          }
-        },
-        {
-          "id": "document-currentscript",
-          "name": {
-            "value": "document currentscript"
-          }
-        },
-        {
-          "id": "document-evaluate-xpath",
-          "name": {
-            "value": "document evaluate xpath"
-          }
-        },
-        {
-          "id": "document-execcommand",
-          "name": {
-            "value": "document execcommand"
-          }
-        },
-        {
-          "id": "document-scrollingelement",
-          "name": {
-            "value": "document scrollingelement"
-          }
-        },
-        {
-          "id": "documenthead",
-          "name": {
-            "value": "documenthead"
-          }
-        },
-        {
-          "id": "dom-manip-convenience",
-          "name": {
-            "value": "dom manip convenience"
-          }
-        },
-        {
-          "id": "dom-range",
-          "name": {
-            "value": "dom range"
-          }
-        },
-        {
-          "id": "domcontentloaded",
-          "name": {
-            "value": "domcontentloaded"
-          }
-        },
-        {
-          "id": "domfocusin-domfocusout-events",
-          "name": {
-            "value": "domfocusin domfocusout events"
-          }
-        },
-        {
-          "id": "dommatrix",
-          "name": {
-            "value": "dommatrix"
-          }
-        },
-        {
-          "id": "download",
-          "name": {
-            "value": "download"
-          }
-        },
-        {
-          "id": "dragndrop",
-          "name": {
-            "value": "dragndrop"
-          }
-        },
-        {
-          "id": "element-closest",
-          "name": {
-            "value": "element closest"
-          }
-        },
-        {
-          "id": "element-from-point",
-          "name": {
-            "value": "element from point"
-          }
-        },
-        {
-          "id": "eme",
-          "name": {
-            "value": "eme"
-          }
-        },
-        {
-          "id": "eot",
-          "name": {
-            "value": "eot"
-          }
-        },
-        {
-          "id": "es5",
-          "name": {
-            "value": "es5"
-          }
-        },
-        {
-          "id": "es6-class",
-          "name": {
-            "value": "es6 class"
-          }
-        },
-        {
-          "id": "es6-generators",
-          "name": {
-            "value": "es6 generators"
-          }
-        },
-        {
-          "id": "es6-module-dynamic-import",
-          "name": {
-            "value": "es6 module dynamic import"
-          }
-        },
-        {
-          "id": "es6-module",
-          "name": {
-            "value": "es6 module"
-          }
-        },
-        {
-          "id": "es6-number",
-          "name": {
-            "value": "es6 number"
-          }
-        },
-        {
-          "id": "es6-string-includes",
-          "name": {
-            "value": "es6 string includes"
-          }
-        },
-        {
-          "id": "eventsource",
-          "name": {
-            "value": "eventsource"
-          }
-        },
-        {
-          "id": "fetch",
-          "name": {
-            "value": "fetch"
-          }
-        },
-        {
-          "id": "fieldset-disabled",
-          "name": {
-            "value": "fieldset disabled"
-          }
-        },
-        {
-          "id": "fileapi",
-          "name": {
-            "value": "fileapi"
-          }
-        },
-        {
-          "id": "filereader",
-          "name": {
-            "value": "filereader"
-          }
-        },
-        {
-          "id": "filereadersync",
-          "name": {
-            "value": "filereadersync"
-          }
-        },
-        {
-          "id": "filesystem",
-          "name": {
-            "value": "filesystem"
-          }
-        },
-        {
-          "id": "flac",
-          "name": {
-            "value": "flac"
-          }
-        },
-        {
-          "id": "flexbox",
-          "name": {
-            "value": "flexbox"
-          }
-        },
-        {
-          "id": "flow-root",
-          "name": {
-            "value": "flow root"
-          }
-        },
-        {
-          "id": "focusin-focusout-events",
-          "name": {
-            "value": "focusin focusout events"
-          }
-        },
-        {
-          "id": "focusoptions-preventscroll",
-          "name": {
-            "value": "focusoptions preventscroll"
-          }
-        },
-        {
-          "id": "font-family-system-ui",
-          "name": {
-            "value": "font family system ui"
-          }
-        },
-        {
-          "id": "font-feature",
-          "name": {
-            "value": "font feature"
-          }
-        },
-        {
-          "id": "font-kerning",
-          "name": {
-            "value": "font kerning"
-          }
-        },
-        {
-          "id": "font-loading",
-          "name": {
-            "value": "font loading"
-          }
-        },
-        {
-          "id": "font-size-adjust",
-          "name": {
-            "value": "font size adjust"
-          }
-        },
-        {
-          "id": "font-smooth",
-          "name": {
-            "value": "font smooth"
-          }
-        },
-        {
-          "id": "font-unicode-range",
-          "name": {
-            "value": "font unicode range"
-          }
-        },
-        {
-          "id": "font-variant-alternates",
-          "name": {
-            "value": "font variant alternates"
-          }
-        },
-        {
-          "id": "font-variant-east-asian",
-          "name": {
-            "value": "font variant east asian"
-          }
-        },
-        {
-          "id": "fontface",
-          "name": {
-            "value": "fontface"
-          }
-        },
-        {
-          "id": "form-attribute",
-          "name": {
-            "value": "form attribute"
-          }
-        },
-        {
-          "id": "form-submit-attributes",
-          "name": {
-            "value": "form submit attributes"
-          }
-        },
-        {
-          "id": "form-validation",
-          "name": {
-            "value": "form validation"
-          }
-        },
-        {
-          "id": "forms",
-          "name": {
-            "value": "forms"
-          }
-        },
-        {
-          "id": "fullscreen",
-          "name": {
-            "value": "fullscreen"
-          }
-        },
-        {
-          "id": "gamepad",
-          "name": {
-            "value": "gamepad"
-          }
-        },
-        {
-          "id": "geolocation",
-          "name": {
-            "value": "geolocation"
-          }
-        },
-        {
-          "id": "getboundingclientrect",
-          "name": {
-            "value": "getboundingclientrect"
-          }
-        },
-        {
-          "id": "getcomputedstyle",
-          "name": {
-            "value": "getcomputedstyle"
-          }
-        },
-        {
-          "id": "getelementsbyclassname",
-          "name": {
-            "value": "getelementsbyclassname"
-          }
-        },
-        {
-          "id": "getrandomvalues",
-          "name": {
-            "value": "getrandomvalues"
-          }
-        },
-        {
-          "id": "hardwareconcurrency",
-          "name": {
-            "value": "hardwareconcurrency"
-          }
-        },
-        {
-          "id": "hashchange",
-          "name": {
-            "value": "hashchange"
-          }
-        },
-        {
-          "id": "heif",
-          "name": {
-            "value": "heif"
-          }
-        },
-        {
-          "id": "hevc",
-          "name": {
-            "value": "hevc"
-          }
-        },
-        {
-          "id": "hidden",
-          "name": {
-            "value": "hidden"
-          }
-        },
-        {
-          "id": "high-resolution-time",
-          "name": {
-            "value": "high resolution time"
-          }
-        },
-        {
-          "id": "history",
-          "name": {
-            "value": "history"
-          }
-        },
-        {
-          "id": "html-media-capture",
-          "name": {
-            "value": "html media capture"
-          }
-        },
-        {
-          "id": "html5semantic",
-          "name": {
-            "value": "html5semantic"
-          }
-        },
-        {
-          "id": "http-live-streaming",
-          "name": {
-            "value": "http live streaming"
-          }
-        },
-        {
-          "id": "http2",
-          "name": {
-            "value": "http2"
-          }
-        },
-        {
-          "id": "iframe-sandbox",
-          "name": {
-            "value": "iframe sandbox"
-          }
-        },
-        {
-          "id": "iframe-seamless",
-          "name": {
-            "value": "iframe seamless"
-          }
-        },
-        {
-          "id": "iframe-srcdoc",
-          "name": {
-            "value": "iframe srcdoc"
-          }
-        },
-        {
-          "id": "imagecapture",
-          "name": {
-            "value": "imagecapture"
-          }
-        },
-        {
-          "id": "ime",
-          "name": {
-            "value": "ime"
-          }
-        },
-        {
-          "id": "img-naturalwidth-naturalheight",
-          "name": {
-            "value": "img naturalwidth naturalheight"
-          }
-        },
-        {
-          "id": "imports",
-          "name": {
-            "value": "imports"
-          }
-        },
-        {
-          "id": "indeterminate-checkbox",
-          "name": {
-            "value": "indeterminate checkbox"
-          }
-        },
-        {
-          "id": "indexeddb",
-          "name": {
-            "value": "indexeddb"
-          }
-        },
-        {
-          "id": "indexeddb2",
-          "name": {
-            "value": "indexeddb2"
-          }
-        },
-        {
-          "id": "inline-block",
-          "name": {
-            "value": "inline block"
-          }
-        },
-        {
-          "id": "innertext",
-          "name": {
-            "value": "innertext"
-          }
-        },
-        {
-          "id": "input-autocomplete-onoff",
-          "name": {
-            "value": "input autocomplete onoff"
-          }
-        },
-        {
-          "id": "input-color",
-          "name": {
-            "value": "input color"
-          }
-        },
-        {
-          "id": "input-datetime",
-          "name": {
-            "value": "input datetime"
-          }
-        },
-        {
-          "id": "input-email-tel-url",
-          "name": {
-            "value": "input email tel url"
-          }
-        },
-        {
-          "id": "input-event",
-          "name": {
-            "value": "input event"
-          }
-        },
-        {
-          "id": "input-file-accept",
-          "name": {
-            "value": "input file accept"
-          }
-        },
-        {
-          "id": "input-file-directory",
-          "name": {
-            "value": "input file directory"
-          }
-        },
-        {
-          "id": "input-file-multiple",
-          "name": {
-            "value": "input file multiple"
-          }
-        },
-        {
-          "id": "input-inputmode",
-          "name": {
-            "value": "input inputmode"
-          }
-        },
-        {
-          "id": "input-minlength",
-          "name": {
-            "value": "input minlength"
-          }
-        },
-        {
-          "id": "input-number",
-          "name": {
-            "value": "input number"
-          }
-        },
-        {
-          "id": "input-pattern",
-          "name": {
-            "value": "input pattern"
-          }
-        },
-        {
-          "id": "input-placeholder",
-          "name": {
-            "value": "input placeholder"
-          }
-        },
-        {
-          "id": "input-range",
-          "name": {
-            "value": "input range"
-          }
-        },
-        {
-          "id": "input-search",
-          "name": {
-            "value": "input search"
-          }
-        },
-        {
-          "id": "input-selection",
-          "name": {
-            "value": "input selection"
-          }
-        },
-        {
-          "id": "insert-adjacent",
-          "name": {
-            "value": "insert adjacent"
-          }
-        },
-        {
-          "id": "insertadjacenthtml",
-          "name": {
-            "value": "insertadjacenthtml"
-          }
-        },
-        {
-          "id": "internationalization",
-          "name": {
-            "value": "internationalization"
-          }
-        },
-        {
-          "id": "intersectionobserver",
-          "name": {
-            "value": "intersectionobserver"
-          }
-        },
-        {
-          "id": "intrinsic-width",
-          "name": {
-            "value": "intrinsic width"
-          }
-        },
-        {
-          "id": "jpeg2000",
-          "name": {
-            "value": "jpeg2000"
-          }
-        },
-        {
-          "id": "jpegxr",
-          "name": {
-            "value": "jpegxr"
-          }
-        },
-        {
-          "id": "json",
-          "name": {
-            "value": "json"
-          }
-        },
-        {
-          "id": "kerning-pairs-ligatures",
-          "name": {
-            "value": "kerning pairs ligatures"
-          }
-        },
-        {
-          "id": "keyboardevent-charcode",
-          "name": {
-            "value": "keyboardevent charcode"
-          }
-        },
-        {
-          "id": "keyboardevent-code",
-          "name": {
-            "value": "keyboardevent code"
-          }
-        },
-        {
-          "id": "keyboardevent-getmodifierstate",
-          "name": {
-            "value": "keyboardevent getmodifierstate"
-          }
-        },
-        {
-          "id": "keyboardevent-key",
-          "name": {
-            "value": "keyboardevent key"
-          }
-        },
-        {
-          "id": "keyboardevent-location",
-          "name": {
-            "value": "keyboardevent location"
-          }
-        },
-        {
-          "id": "keyboardevent-which",
-          "name": {
-            "value": "keyboardevent which"
-          }
-        },
-        {
-          "id": "lazyload",
-          "name": {
-            "value": "lazyload"
-          }
-        },
-        {
-          "id": "let",
-          "name": {
-            "value": "let"
-          }
-        },
-        {
-          "id": "link-icon-png",
-          "name": {
-            "value": "link icon png"
-          }
-        },
-        {
-          "id": "link-icon-svg",
-          "name": {
-            "value": "link icon svg"
-          }
-        },
-        {
-          "id": "link-rel-dns-prefetch",
-          "name": {
-            "value": "link rel dns prefetch"
-          }
-        },
-        {
-          "id": "link-rel-preconnect",
-          "name": {
-            "value": "link rel preconnect"
-          }
-        },
-        {
-          "id": "link-rel-prefetch",
-          "name": {
-            "value": "link rel prefetch"
-          }
-        },
-        {
-          "id": "link-rel-preload",
-          "name": {
-            "value": "link rel preload"
-          }
-        },
-        {
-          "id": "link-rel-prerender",
-          "name": {
-            "value": "link rel prerender"
-          }
-        },
-        {
-          "id": "localecompare",
-          "name": {
-            "value": "localecompare"
-          }
-        },
-        {
-          "id": "matchesselector",
-          "name": {
-            "value": "matchesselector"
-          }
-        },
-        {
-          "id": "matchmedia",
-          "name": {
-            "value": "matchmedia"
-          }
-        },
-        {
-          "id": "mathml",
-          "name": {
-            "value": "mathml"
-          }
-        },
-        {
-          "id": "maxlength",
-          "name": {
-            "value": "maxlength"
-          }
-        },
-        {
-          "id": "media-attribute",
-          "name": {
-            "value": "media attribute"
-          }
-        },
-        {
-          "id": "media-fragments",
-          "name": {
-            "value": "media fragments"
-          }
-        },
-        {
-          "id": "media-session-api",
-          "name": {
-            "value": "media session api"
-          }
-        },
-        {
-          "id": "mediacapture-fromelement",
-          "name": {
-            "value": "mediacapture fromelement"
-          }
-        },
-        {
-          "id": "mediarecorder",
-          "name": {
-            "value": "mediarecorder"
-          }
-        },
-        {
-          "id": "mediasource",
-          "name": {
-            "value": "mediasource"
-          }
-        },
-        {
-          "id": "menu",
-          "name": {
-            "value": "menu"
-          }
-        },
-        {
-          "id": "meter",
-          "name": {
-            "value": "meter"
-          }
-        },
-        {
-          "id": "midi",
-          "name": {
-            "value": "midi"
-          }
-        },
-        {
-          "id": "minmaxwh",
-          "name": {
-            "value": "minmaxwh"
-          }
-        },
-        {
-          "id": "mp3",
-          "name": {
-            "value": "mp3"
-          }
-        },
-        {
-          "id": "mpeg-dash",
-          "name": {
-            "value": "mpeg dash"
-          }
-        },
-        {
-          "id": "mpeg4",
-          "name": {
-            "value": "mpeg4"
-          }
-        },
-        {
-          "id": "multibackgrounds",
-          "name": {
-            "value": "multibackgrounds"
-          }
-        },
-        {
-          "id": "multicolumn",
-          "name": {
-            "value": "multicolumn"
-          }
-        },
-        {
-          "id": "mutation-events",
-          "name": {
-            "value": "mutation events"
-          }
-        },
-        {
-          "id": "mutationobserver",
-          "name": {
-            "value": "mutationobserver"
-          }
-        },
-        {
-          "id": "namevalue-storage",
-          "name": {
-            "value": "namevalue storage"
-          }
-        },
-        {
-          "id": "nav-timing",
-          "name": {
-            "value": "nav timing"
-          }
-        },
-        {
-          "id": "navigator-language",
-          "name": {
-            "value": "navigator language"
-          }
-        },
-        {
-          "id": "netinfo",
-          "name": {
-            "value": "netinfo"
-          }
-        },
-        {
-          "id": "node-contains",
-          "name": {
-            "value": "node contains"
-          }
-        },
-        {
-          "id": "node-parentelement",
-          "name": {
-            "value": "node parentelement"
-          }
-        },
-        {
-          "id": "notifications",
-          "name": {
-            "value": "notifications"
-          }
-        },
-        {
-          "id": "object-fit",
-          "name": {
-            "value": "object fit"
-          }
-        },
-        {
-          "id": "object-observe",
-          "name": {
-            "value": "object observe"
-          }
-        },
-        {
-          "id": "object-values",
-          "name": {
-            "value": "object values"
-          }
-        },
-        {
-          "id": "objectrtc",
-          "name": {
-            "value": "objectrtc"
-          }
-        },
-        {
-          "id": "offline-apps",
-          "name": {
-            "value": "offline apps"
-          }
-        },
-        {
-          "id": "offscreencanvas",
-          "name": {
-            "value": "offscreencanvas"
-          }
-        },
-        {
-          "id": "ogg-vorbis",
-          "name": {
-            "value": "ogg vorbis"
-          }
-        },
-        {
-          "id": "ogv",
-          "name": {
-            "value": "ogv"
-          }
-        },
-        {
-          "id": "ol-reversed",
-          "name": {
-            "value": "ol reversed"
-          }
-        },
-        {
-          "id": "once-event-listener",
-          "name": {
-            "value": "once event listener"
-          }
-        },
-        {
-          "id": "online-status",
-          "name": {
-            "value": "online status"
-          }
-        },
-        {
-          "id": "opus",
-          "name": {
-            "value": "opus"
-          }
-        },
-        {
-          "id": "outline",
-          "name": {
-            "value": "outline"
-          }
-        },
-        {
-          "id": "pad-start-end",
-          "name": {
-            "value": "pad start end"
-          }
-        },
-        {
-          "id": "page-transition-events",
-          "name": {
-            "value": "page transition events"
-          }
-        },
-        {
-          "id": "pagevisibility",
-          "name": {
-            "value": "pagevisibility"
-          }
-        },
-        {
-          "id": "passive-event-listener",
-          "name": {
-            "value": "passive event listener"
-          }
-        },
-        {
-          "id": "path2d",
-          "name": {
-            "value": "path2d"
-          }
-        },
-        {
-          "id": "payment-request",
-          "name": {
-            "value": "payment request"
-          }
-        },
-        {
-          "id": "permissions-api",
-          "name": {
-            "value": "permissions api"
-          }
-        },
-        {
-          "id": "picture",
-          "name": {
-            "value": "picture"
-          }
-        },
-        {
-          "id": "ping",
-          "name": {
-            "value": "ping"
-          }
-        },
-        {
-          "id": "png-alpha",
-          "name": {
-            "value": "png alpha"
-          }
-        },
-        {
-          "id": "pointer-events",
-          "name": {
-            "value": "pointer events"
-          }
-        },
-        {
-          "id": "pointer",
-          "name": {
-            "value": "pointer"
-          }
-        },
-        {
-          "id": "pointerlock",
-          "name": {
-            "value": "pointerlock"
-          }
-        },
-        {
-          "id": "prefers-reduced-motion",
-          "name": {
-            "value": "prefers reduced motion"
-          }
-        },
-        {
-          "id": "progress",
-          "name": {
-            "value": "progress"
-          }
-        },
-        {
-          "id": "promises",
-          "name": {
-            "value": "promises"
-          }
-        },
-        {
-          "id": "proximity",
-          "name": {
-            "value": "proximity"
-          }
-        },
-        {
-          "id": "proxy",
-          "name": {
-            "value": "proxy"
-          }
-        },
-        {
-          "id": "publickeypinning",
-          "name": {
-            "value": "publickeypinning"
-          }
-        },
-        {
-          "id": "push-api",
-          "name": {
-            "value": "push api"
-          }
-        },
-        {
-          "id": "queryselector",
-          "name": {
-            "value": "queryselector"
-          }
-        },
-        {
-          "id": "readonly-attr",
-          "name": {
-            "value": "readonly attr"
-          }
-        },
-        {
-          "id": "referrer-policy",
-          "name": {
-            "value": "referrer policy"
-          }
-        },
-        {
-          "id": "registerprotocolhandler",
-          "name": {
-            "value": "registerprotocolhandler"
-          }
-        },
-        {
-          "id": "rel-noopener",
-          "name": {
-            "value": "rel noopener"
-          }
-        },
-        {
-          "id": "rel-noreferrer",
-          "name": {
-            "value": "rel noreferrer"
-          }
-        },
-        {
-          "id": "rellist",
-          "name": {
-            "value": "rellist"
-          }
-        },
-        {
-          "id": "rem",
-          "name": {
-            "value": "rem"
-          }
-        },
-        {
-          "id": "requestanimationframe",
-          "name": {
-            "value": "requestanimationframe"
-          }
-        },
-        {
-          "id": "requestidlecallback",
-          "name": {
-            "value": "requestidlecallback"
-          }
-        },
-        {
-          "id": "resizeobserver",
-          "name": {
-            "value": "resizeobserver"
-          }
-        },
-        {
-          "id": "resource-timing",
-          "name": {
-            "value": "resource timing"
-          }
-        },
-        {
-          "id": "rest-parameters",
-          "name": {
-            "value": "rest parameters"
-          }
-        },
-        {
-          "id": "rtcpeerconnection",
-          "name": {
-            "value": "rtcpeerconnection"
-          }
-        },
-        {
-          "id": "ruby",
-          "name": {
-            "value": "ruby"
-          }
-        },
-        {
-          "id": "run-in",
-          "name": {
-            "value": "run in"
-          }
-        },
-        {
-          "id": "same-site-cookie-attribute",
-          "name": {
-            "value": "same site cookie attribute"
-          }
-        },
-        {
-          "id": "screen-orientation",
-          "name": {
-            "value": "screen orientation"
-          }
-        },
-        {
-          "id": "script-async",
-          "name": {
-            "value": "script async"
-          }
-        },
-        {
-          "id": "script-defer",
-          "name": {
-            "value": "script defer"
-          }
-        },
-        {
-          "id": "scrollintoview",
-          "name": {
-            "value": "scrollintoview"
-          }
-        },
-        {
-          "id": "scrollintoviewifneeded",
-          "name": {
-            "value": "scrollintoviewifneeded"
-          }
-        },
-        {
-          "id": "sdch",
-          "name": {
-            "value": "sdch"
-          }
-        },
-        {
-          "id": "selection-api",
-          "name": {
-            "value": "selection api"
-          }
-        },
-        {
-          "id": "server-timing",
-          "name": {
-            "value": "server timing"
-          }
-        },
-        {
-          "id": "serviceworkers",
-          "name": {
-            "value": "serviceworkers"
-          }
-        },
-        {
-          "id": "setimmediate",
-          "name": {
-            "value": "setimmediate"
-          }
-        },
-        {
-          "id": "sha-2",
-          "name": {
-            "value": "sha 2"
-          }
-        },
-        {
-          "id": "shadowdom",
-          "name": {
-            "value": "shadowdom"
-          }
-        },
-        {
-          "id": "shadowdomv1",
-          "name": {
-            "value": "shadowdomv1"
-          }
-        },
-        {
-          "id": "sharedworkers",
-          "name": {
-            "value": "sharedworkers"
-          }
-        },
-        {
-          "id": "sni",
-          "name": {
-            "value": "sni"
-          }
-        },
-        {
-          "id": "spdy",
-          "name": {
-            "value": "spdy"
-          }
-        },
-        {
-          "id": "speech-recognition",
-          "name": {
-            "value": "speech recognition"
-          }
-        },
-        {
-          "id": "speech-synthesis",
-          "name": {
-            "value": "speech synthesis"
-          }
-        },
-        {
-          "id": "spellcheck-attribute",
-          "name": {
-            "value": "spellcheck attribute"
-          }
-        },
-        {
-          "id": "sql-storage",
-          "name": {
-            "value": "sql storage"
-          }
-        },
-        {
-          "id": "srcset",
-          "name": {
-            "value": "srcset"
-          }
-        },
-        {
-          "id": "stopimmediatepropagation",
-          "name": {
-            "value": "stopimmediatepropagation"
-          }
-        },
-        {
-          "id": "stream",
-          "name": {
-            "value": "stream"
-          }
-        },
-        {
-          "id": "streams",
-          "name": {
-            "value": "streams"
-          }
-        },
-        {
-          "id": "stricttransportsecurity",
-          "name": {
-            "value": "stricttransportsecurity"
-          }
-        },
-        {
-          "id": "style-scoped",
-          "name": {
-            "value": "style scoped"
-          }
-        },
-        {
-          "id": "subresource-integrity",
-          "name": {
-            "value": "subresource integrity"
-          }
-        },
-        {
-          "id": "svg-css",
-          "name": {
-            "value": "svg css"
-          }
-        },
-        {
-          "id": "svg-filters",
-          "name": {
-            "value": "svg filters"
-          }
-        },
-        {
-          "id": "svg-fonts",
-          "name": {
-            "value": "svg fonts"
-          }
-        },
-        {
-          "id": "svg-fragment",
-          "name": {
-            "value": "svg fragment"
-          }
-        },
-        {
-          "id": "svg-html",
-          "name": {
-            "value": "svg html"
-          }
-        },
-        {
-          "id": "svg-html5",
-          "name": {
-            "value": "svg html5"
-          }
-        },
-        {
-          "id": "svg-img",
-          "name": {
-            "value": "svg img"
-          }
-        },
-        {
-          "id": "svg-smil",
-          "name": {
-            "value": "svg smil"
-          }
-        },
-        {
-          "id": "svg",
-          "name": {
-            "value": "svg"
-          }
-        },
-        {
-          "id": "symbols",
-          "name": {
-            "value": "symbols"
-          }
-        },
-        {
-          "id": "tabindex-attr",
-          "name": {
-            "value": "tabindex attr"
-          }
-        },
-        {
-          "id": "template-literals",
-          "name": {
-            "value": "template literals"
-          }
-        },
-        {
-          "id": "template",
-          "name": {
-            "value": "template"
-          }
-        },
-        {
-          "id": "testfeat",
-          "name": {
-            "value": "testfeat"
-          }
-        },
-        {
-          "id": "text-decoration",
-          "name": {
-            "value": "text decoration"
-          }
-        },
-        {
-          "id": "text-emphasis",
-          "name": {
-            "value": "text emphasis"
-          }
-        },
-        {
-          "id": "text-overflow",
-          "name": {
-            "value": "text overflow"
-          }
-        },
-        {
-          "id": "text-size-adjust",
-          "name": {
-            "value": "text size adjust"
-          }
-        },
-        {
-          "id": "text-stroke",
-          "name": {
-            "value": "text stroke"
-          }
-        },
-        {
-          "id": "textcontent",
-          "name": {
-            "value": "textcontent"
-          }
-        },
-        {
-          "id": "textencoder",
-          "name": {
-            "value": "textencoder"
-          }
-        },
-        {
-          "id": "tls1-1",
-          "name": {
-            "value": "tls1 1"
-          }
-        },
-        {
-          "id": "tls1-2",
-          "name": {
-            "value": "tls1 2"
-          }
-        },
-        {
-          "id": "tls1-3",
-          "name": {
-            "value": "tls1 3"
-          }
-        },
-        {
-          "id": "token-binding",
-          "name": {
-            "value": "token binding"
-          }
-        },
-        {
-          "id": "touch",
-          "name": {
-            "value": "touch"
-          }
-        },
-        {
-          "id": "transforms2d",
-          "name": {
-            "value": "transforms2d"
-          }
-        },
-        {
-          "id": "transforms3d",
-          "name": {
-            "value": "transforms3d"
-          }
-        },
-        {
-          "id": "ttf",
-          "name": {
-            "value": "ttf"
-          }
-        },
-        {
-          "id": "typedarrays",
-          "name": {
-            "value": "typedarrays"
-          }
-        },
-        {
-          "id": "u2f",
-          "name": {
-            "value": "u2f"
-          }
-        },
-        {
-          "id": "unhandledrejection",
-          "name": {
-            "value": "unhandledrejection"
-          }
-        },
-        {
-          "id": "upgradeinsecurerequests",
-          "name": {
-            "value": "upgradeinsecurerequests"
-          }
-        },
-        {
-          "id": "url",
-          "name": {
-            "value": "url"
-          }
-        },
-        {
-          "id": "urlsearchparams",
-          "name": {
-            "value": "urlsearchparams"
-          }
-        },
-        {
-          "id": "use-strict",
-          "name": {
-            "value": "use strict"
-          }
-        },
-        {
-          "id": "user-select-none",
-          "name": {
-            "value": "user select none"
-          }
-        },
-        {
-          "id": "user-timing",
-          "name": {
-            "value": "user timing"
-          }
-        },
-        {
-          "id": "variable-fonts",
-          "name": {
-            "value": "variable fonts"
-          }
-        },
-        {
-          "id": "vibration",
-          "name": {
-            "value": "vibration"
-          }
-        },
-        {
-          "id": "video",
-          "name": {
-            "value": "video"
-          }
-        },
-        {
-          "id": "videotracks",
-          "name": {
-            "value": "videotracks"
-          }
-        },
-        {
-          "id": "viewport-units",
-          "name": {
-            "value": "viewport units"
-          }
-        },
-        {
-          "id": "wai-aria",
-          "name": {
-            "value": "wai aria"
-          }
-        },
-        {
-          "id": "wasm",
-          "name": {
-            "value": "wasm"
-          }
-        },
-        {
-          "id": "wav",
-          "name": {
-            "value": "wav"
-          }
-        },
-        {
-          "id": "wbr-element",
-          "name": {
-            "value": "wbr element"
-          }
-        },
-        {
-          "id": "web-animation",
-          "name": {
-            "value": "web animation"
-          }
-        },
-        {
-          "id": "web-app-manifest",
-          "name": {
-            "value": "web app manifest"
-          }
-        },
-        {
-          "id": "web-bluetooth",
-          "name": {
-            "value": "web bluetooth"
-          }
-        },
-        {
-          "id": "web-share",
-          "name": {
-            "value": "web share"
-          }
-        },
-        {
-          "id": "webgl",
-          "name": {
-            "value": "webgl"
-          }
-        },
-        {
-          "id": "webgl2",
-          "name": {
-            "value": "webgl2"
-          }
-        },
-        {
-          "id": "webm",
-          "name": {
-            "value": "webm"
-          }
-        },
-        {
-          "id": "webp",
-          "name": {
-            "value": "webp"
-          }
-        },
-        {
-          "id": "websockets",
-          "name": {
-            "value": "websockets"
-          }
-        },
-        {
-          "id": "webusb",
-          "name": {
-            "value": "webusb"
-          }
-        },
-        {
-          "id": "webvr",
-          "name": {
-            "value": "webvr"
-          }
-        },
-        {
-          "id": "webvtt",
-          "name": {
-            "value": "webvtt"
-          }
-        },
-        {
-          "id": "webworkers",
-          "name": {
-            "value": "webworkers"
-          }
-        },
-        {
-          "id": "will-change",
-          "name": {
-            "value": "will change"
-          }
-        },
-        {
-          "id": "woff",
-          "name": {
-            "value": "woff"
-          }
-        },
-        {
-          "id": "woff2",
-          "name": {
-            "value": "woff2"
-          }
-        },
-        {
-          "id": "word-break",
-          "name": {
-            "value": "word break"
-          }
-        },
-        {
-          "id": "wordwrap",
-          "name": {
-            "value": "wordwrap"
-          }
-        },
-        {
-          "id": "x-doc-messaging",
-          "name": {
-            "value": "x doc messaging"
-          }
-        },
-        {
-          "id": "x-frame-options",
-          "name": {
-            "value": "x frame options"
-          }
-        },
-        {
-          "id": "xhr2",
-          "name": {
-            "value": "xhr2"
-          }
-        },
-        {
-          "id": "xhtml",
-          "name": {
-            "value": "xhtml"
-          }
-        },
-        {
-          "id": "xhtmlsmil",
-          "name": {
-            "value": "xhtmlsmil"
-          }
-        },
-        {
-          "id": "xml-serializer",
-          "name": {
-            "value": "xml serializer"
-          }
+      "types": [
+        {
+          "name": "Features",
+          "values": [
+            {
+              "id": "aac",
+              "name": {
+                "value": "aac"
+              }
+            },
+            {
+              "id": "ac3-ec3",
+              "name": {
+                "value": "ac3 ec3"
+              }
+            },
+            {
+              "id": "addeventlistener",
+              "name": {
+                "value": "addeventlistener"
+              }
+            },
+            {
+              "id": "alternate-stylesheet",
+              "name": {
+                "value": "alternate stylesheet"
+              }
+            },
+            {
+              "id": "ambient-light",
+              "name": {
+                "value": "ambient light"
+              }
+            },
+            {
+              "id": "apng",
+              "name": {
+                "value": "apng"
+              }
+            },
+            {
+              "id": "array-includes",
+              "name": {
+                "value": "array includes"
+              }
+            },
+            {
+              "id": "arrow-functions",
+              "name": {
+                "value": "arrow functions"
+              }
+            },
+            {
+              "id": "asmjs",
+              "name": {
+                "value": "asmjs"
+              }
+            },
+            {
+              "id": "async-functions",
+              "name": {
+                "value": "async functions"
+              }
+            },
+            {
+              "id": "async-iterations-and-generators",
+              "name": {
+                "value": "async iterations and generators"
+              }
+            },
+            {
+              "id": "atob-btoa",
+              "name": {
+                "value": "atob btoa"
+              }
+            },
+            {
+              "id": "audio-api",
+              "name": {
+                "value": "audio api"
+              }
+            },
+            {
+              "id": "audio",
+              "name": {
+                "value": "audio"
+              }
+            },
+            {
+              "id": "audiotracks",
+              "name": {
+                "value": "audiotracks"
+              }
+            },
+            {
+              "id": "autofocus",
+              "name": {
+                "value": "autofocus"
+              }
+            },
+            {
+              "id": "auxclick",
+              "name": {
+                "value": "auxclick"
+              }
+            },
+            {
+              "id": "background-attachment",
+              "name": {
+                "value": "background attachment"
+              }
+            },
+            {
+              "id": "background-img-opts",
+              "name": {
+                "value": "background img opts"
+              }
+            },
+            {
+              "id": "background-position-x-y",
+              "name": {
+                "value": "background position x y"
+              }
+            },
+            {
+              "id": "background-repeat-round-space",
+              "name": {
+                "value": "background repeat round space"
+              }
+            },
+            {
+              "id": "background-sync",
+              "name": {
+                "value": "background sync"
+              }
+            },
+            {
+              "id": "battery-status",
+              "name": {
+                "value": "battery status"
+              }
+            },
+            {
+              "id": "beacon",
+              "name": {
+                "value": "beacon"
+              }
+            },
+            {
+              "id": "beforeafterprint",
+              "name": {
+                "value": "beforeafterprint"
+              }
+            },
+            {
+              "id": "blobbuilder",
+              "name": {
+                "value": "blobbuilder"
+              }
+            },
+            {
+              "id": "bloburls",
+              "name": {
+                "value": "bloburls"
+              }
+            },
+            {
+              "id": "border-image",
+              "name": {
+                "value": "border image"
+              }
+            },
+            {
+              "id": "border-radius",
+              "name": {
+                "value": "border radius"
+              }
+            },
+            {
+              "id": "broadcastchannel",
+              "name": {
+                "value": "broadcastchannel"
+              }
+            },
+            {
+              "id": "brotli",
+              "name": {
+                "value": "brotli"
+              }
+            },
+            {
+              "id": "calc",
+              "name": {
+                "value": "calc"
+              }
+            },
+            {
+              "id": "canvas-blending",
+              "name": {
+                "value": "canvas blending"
+              }
+            },
+            {
+              "id": "canvas-text",
+              "name": {
+                "value": "canvas text"
+              }
+            },
+            {
+              "id": "canvas",
+              "name": {
+                "value": "canvas"
+              }
+            },
+            {
+              "id": "ch-unit",
+              "name": {
+                "value": "ch unit"
+              }
+            },
+            {
+              "id": "chacha20-poly1305",
+              "name": {
+                "value": "chacha20 poly1305"
+              }
+            },
+            {
+              "id": "channel-messaging",
+              "name": {
+                "value": "channel messaging"
+              }
+            },
+            {
+              "id": "childnode-remove",
+              "name": {
+                "value": "childnode remove"
+              }
+            },
+            {
+              "id": "classlist",
+              "name": {
+                "value": "classlist"
+              }
+            },
+            {
+              "id": "client-hints-dpr-width-viewport",
+              "name": {
+                "value": "client hints dpr width viewport"
+              }
+            },
+            {
+              "id": "clipboard",
+              "name": {
+                "value": "clipboard"
+              }
+            },
+            {
+              "id": "comparedocumentposition",
+              "name": {
+                "value": "comparedocumentposition"
+              }
+            },
+            {
+              "id": "console-basic",
+              "name": {
+                "value": "console basic"
+              }
+            },
+            {
+              "id": "console-time",
+              "name": {
+                "value": "console time"
+              }
+            },
+            {
+              "id": "const",
+              "name": {
+                "value": "const"
+              }
+            },
+            {
+              "id": "constraint-validation",
+              "name": {
+                "value": "constraint validation"
+              }
+            },
+            {
+              "id": "contenteditable",
+              "name": {
+                "value": "contenteditable"
+              }
+            },
+            {
+              "id": "contentsecuritypolicy",
+              "name": {
+                "value": "contentsecuritypolicy"
+              }
+            },
+            {
+              "id": "contentsecuritypolicy2",
+              "name": {
+                "value": "contentsecuritypolicy2"
+              }
+            },
+            {
+              "id": "cors",
+              "name": {
+                "value": "cors"
+              }
+            },
+            {
+              "id": "credential-management",
+              "name": {
+                "value": "credential management"
+              }
+            },
+            {
+              "id": "cryptography",
+              "name": {
+                "value": "cryptography"
+              }
+            },
+            {
+              "id": "css-all",
+              "name": {
+                "value": "css all"
+              }
+            },
+            {
+              "id": "css-animation",
+              "name": {
+                "value": "css animation"
+              }
+            },
+            {
+              "id": "css-any-link",
+              "name": {
+                "value": "css any link"
+              }
+            },
+            {
+              "id": "css-appearance",
+              "name": {
+                "value": "css appearance"
+              }
+            },
+            {
+              "id": "css-apply-rule",
+              "name": {
+                "value": "css apply rule"
+              }
+            },
+            {
+              "id": "css-at-counter-style",
+              "name": {
+                "value": "css at counter style"
+              }
+            },
+            {
+              "id": "css-backdrop-filter",
+              "name": {
+                "value": "css backdrop filter"
+              }
+            },
+            {
+              "id": "css-background-offsets",
+              "name": {
+                "value": "css background offsets"
+              }
+            },
+            {
+              "id": "css-backgroundblendmode",
+              "name": {
+                "value": "css backgroundblendmode"
+              }
+            },
+            {
+              "id": "css-boxdecorationbreak",
+              "name": {
+                "value": "css boxdecorationbreak"
+              }
+            },
+            {
+              "id": "css-boxshadow",
+              "name": {
+                "value": "css boxshadow"
+              }
+            },
+            {
+              "id": "css-canvas",
+              "name": {
+                "value": "css canvas"
+              }
+            },
+            {
+              "id": "css-caret-color",
+              "name": {
+                "value": "css caret color"
+              }
+            },
+            {
+              "id": "css-case-insensitive",
+              "name": {
+                "value": "css case insensitive"
+              }
+            },
+            {
+              "id": "css-clip-path",
+              "name": {
+                "value": "css clip path"
+              }
+            },
+            {
+              "id": "css-color-adjust",
+              "name": {
+                "value": "css color adjust"
+              }
+            },
+            {
+              "id": "css-conic-gradients",
+              "name": {
+                "value": "css conic gradients"
+              }
+            },
+            {
+              "id": "css-containment",
+              "name": {
+                "value": "css containment"
+              }
+            },
+            {
+              "id": "css-counters",
+              "name": {
+                "value": "css counters"
+              }
+            },
+            {
+              "id": "css-crisp-edges",
+              "name": {
+                "value": "css crisp edges"
+              }
+            },
+            {
+              "id": "css-cross-fade",
+              "name": {
+                "value": "css cross fade"
+              }
+            },
+            {
+              "id": "css-default-pseudo",
+              "name": {
+                "value": "css default pseudo"
+              }
+            },
+            {
+              "id": "css-descendant-gtgt",
+              "name": {
+                "value": "css descendant gtgt"
+              }
+            },
+            {
+              "id": "css-deviceadaptation",
+              "name": {
+                "value": "css deviceadaptation"
+              }
+            },
+            {
+              "id": "css-dir-pseudo",
+              "name": {
+                "value": "css dir pseudo"
+              }
+            },
+            {
+              "id": "css-display-contents",
+              "name": {
+                "value": "css display contents"
+              }
+            },
+            {
+              "id": "css-element-function",
+              "name": {
+                "value": "css element function"
+              }
+            },
+            {
+              "id": "css-exclusions",
+              "name": {
+                "value": "css exclusions"
+              }
+            },
+            {
+              "id": "css-featurequeries",
+              "name": {
+                "value": "css featurequeries"
+              }
+            },
+            {
+              "id": "css-filter-function",
+              "name": {
+                "value": "css filter function"
+              }
+            },
+            {
+              "id": "css-filters",
+              "name": {
+                "value": "css filters"
+              }
+            },
+            {
+              "id": "css-first-letter",
+              "name": {
+                "value": "css first letter"
+              }
+            },
+            {
+              "id": "css-first-line",
+              "name": {
+                "value": "css first line"
+              }
+            },
+            {
+              "id": "css-fixed",
+              "name": {
+                "value": "css fixed"
+              }
+            },
+            {
+              "id": "css-focus-visible",
+              "name": {
+                "value": "css focus visible"
+              }
+            },
+            {
+              "id": "css-focus-within",
+              "name": {
+                "value": "css focus within"
+              }
+            },
+            {
+              "id": "css-font-rendering-controls",
+              "name": {
+                "value": "css font rendering controls"
+              }
+            },
+            {
+              "id": "css-font-stretch",
+              "name": {
+                "value": "css font stretch"
+              }
+            },
+            {
+              "id": "css-gencontent",
+              "name": {
+                "value": "css gencontent"
+              }
+            },
+            {
+              "id": "css-gradients",
+              "name": {
+                "value": "css gradients"
+              }
+            },
+            {
+              "id": "css-grid",
+              "name": {
+                "value": "css grid"
+              }
+            },
+            {
+              "id": "css-hanging-punctuation",
+              "name": {
+                "value": "css hanging punctuation"
+              }
+            },
+            {
+              "id": "css-has",
+              "name": {
+                "value": "css has"
+              }
+            },
+            {
+              "id": "css-hyphenate",
+              "name": {
+                "value": "css hyphenate"
+              }
+            },
+            {
+              "id": "css-hyphens",
+              "name": {
+                "value": "css hyphens"
+              }
+            },
+            {
+              "id": "css-image-orientation",
+              "name": {
+                "value": "css image orientation"
+              }
+            },
+            {
+              "id": "css-image-set",
+              "name": {
+                "value": "css image set"
+              }
+            },
+            {
+              "id": "css-in-out-of-range",
+              "name": {
+                "value": "css in out of range"
+              }
+            },
+            {
+              "id": "css-indeterminate-pseudo",
+              "name": {
+                "value": "css indeterminate pseudo"
+              }
+            },
+            {
+              "id": "css-initial-letter",
+              "name": {
+                "value": "css initial letter"
+              }
+            },
+            {
+              "id": "css-initial-value",
+              "name": {
+                "value": "css initial value"
+              }
+            },
+            {
+              "id": "css-letter-spacing",
+              "name": {
+                "value": "css letter spacing"
+              }
+            },
+            {
+              "id": "css-line-clamp",
+              "name": {
+                "value": "css line clamp"
+              }
+            },
+            {
+              "id": "css-logical-props",
+              "name": {
+                "value": "css logical props"
+              }
+            },
+            {
+              "id": "css-marker-pseudo",
+              "name": {
+                "value": "css marker pseudo"
+              }
+            },
+            {
+              "id": "css-masks",
+              "name": {
+                "value": "css masks"
+              }
+            },
+            {
+              "id": "css-matches-pseudo",
+              "name": {
+                "value": "css matches pseudo"
+              }
+            },
+            {
+              "id": "css-media-interaction",
+              "name": {
+                "value": "css media interaction"
+              }
+            },
+            {
+              "id": "css-media-resolution",
+              "name": {
+                "value": "css media resolution"
+              }
+            },
+            {
+              "id": "css-media-scripting",
+              "name": {
+                "value": "css media scripting"
+              }
+            },
+            {
+              "id": "css-mediaqueries",
+              "name": {
+                "value": "css mediaqueries"
+              }
+            },
+            {
+              "id": "css-mixblendmode",
+              "name": {
+                "value": "css mixblendmode"
+              }
+            },
+            {
+              "id": "css-motion-paths",
+              "name": {
+                "value": "css motion paths"
+              }
+            },
+            {
+              "id": "css-namespaces",
+              "name": {
+                "value": "css namespaces"
+              }
+            },
+            {
+              "id": "css-not-sel-list",
+              "name": {
+                "value": "css not sel list"
+              }
+            },
+            {
+              "id": "css-nth-child-of",
+              "name": {
+                "value": "css nth child of"
+              }
+            },
+            {
+              "id": "css-opacity",
+              "name": {
+                "value": "css opacity"
+              }
+            },
+            {
+              "id": "css-optional-pseudo",
+              "name": {
+                "value": "css optional pseudo"
+              }
+            },
+            {
+              "id": "css-overflow-anchor",
+              "name": {
+                "value": "css overflow anchor"
+              }
+            },
+            {
+              "id": "css-overscroll-behavior",
+              "name": {
+                "value": "css overscroll behavior"
+              }
+            },
+            {
+              "id": "css-page-break",
+              "name": {
+                "value": "css page break"
+              }
+            },
+            {
+              "id": "css-paged-media",
+              "name": {
+                "value": "css paged media"
+              }
+            },
+            {
+              "id": "css-paint-api",
+              "name": {
+                "value": "css paint api"
+              }
+            },
+            {
+              "id": "css-placeholder-shown",
+              "name": {
+                "value": "css placeholder shown"
+              }
+            },
+            {
+              "id": "css-placeholder",
+              "name": {
+                "value": "css placeholder"
+              }
+            },
+            {
+              "id": "css-read-only-write",
+              "name": {
+                "value": "css read only write"
+              }
+            },
+            {
+              "id": "css-rebeccapurple",
+              "name": {
+                "value": "css rebeccapurple"
+              }
+            },
+            {
+              "id": "css-reflections",
+              "name": {
+                "value": "css reflections"
+              }
+            },
+            {
+              "id": "css-regions",
+              "name": {
+                "value": "css regions"
+              }
+            },
+            {
+              "id": "css-repeating-gradients",
+              "name": {
+                "value": "css repeating gradients"
+              }
+            },
+            {
+              "id": "css-resize",
+              "name": {
+                "value": "css resize"
+              }
+            },
+            {
+              "id": "css-revert-value",
+              "name": {
+                "value": "css revert value"
+              }
+            },
+            {
+              "id": "css-rrggbbaa",
+              "name": {
+                "value": "css rrggbbaa"
+              }
+            },
+            {
+              "id": "css-scroll-behavior",
+              "name": {
+                "value": "css scroll behavior"
+              }
+            },
+            {
+              "id": "css-scrollbar",
+              "name": {
+                "value": "css scrollbar"
+              }
+            },
+            {
+              "id": "css-sel2",
+              "name": {
+                "value": "css sel2"
+              }
+            },
+            {
+              "id": "css-sel3",
+              "name": {
+                "value": "css sel3"
+              }
+            },
+            {
+              "id": "css-selection",
+              "name": {
+                "value": "css selection"
+              }
+            },
+            {
+              "id": "css-shapes",
+              "name": {
+                "value": "css shapes"
+              }
+            },
+            {
+              "id": "css-snappoints",
+              "name": {
+                "value": "css snappoints"
+              }
+            },
+            {
+              "id": "css-sticky",
+              "name": {
+                "value": "css sticky"
+              }
+            },
+            {
+              "id": "css-supports-api",
+              "name": {
+                "value": "css supports api"
+              }
+            },
+            {
+              "id": "css-table",
+              "name": {
+                "value": "css table"
+              }
+            },
+            {
+              "id": "css-text-align-last",
+              "name": {
+                "value": "css text align last"
+              }
+            },
+            {
+              "id": "css-text-indent",
+              "name": {
+                "value": "css text indent"
+              }
+            },
+            {
+              "id": "css-text-justify",
+              "name": {
+                "value": "css text justify"
+              }
+            },
+            {
+              "id": "css-text-orientation",
+              "name": {
+                "value": "css text orientation"
+              }
+            },
+            {
+              "id": "css-text-spacing",
+              "name": {
+                "value": "css text spacing"
+              }
+            },
+            {
+              "id": "css-textshadow",
+              "name": {
+                "value": "css textshadow"
+              }
+            },
+            {
+              "id": "css-touch-action-2",
+              "name": {
+                "value": "css touch action 2"
+              }
+            },
+            {
+              "id": "css-touch-action",
+              "name": {
+                "value": "css touch action"
+              }
+            },
+            {
+              "id": "css-transitions",
+              "name": {
+                "value": "css transitions"
+              }
+            },
+            {
+              "id": "css-unicode-bidi",
+              "name": {
+                "value": "css unicode bidi"
+              }
+            },
+            {
+              "id": "css-unset-value",
+              "name": {
+                "value": "css unset value"
+              }
+            },
+            {
+              "id": "css-variables",
+              "name": {
+                "value": "css variables"
+              }
+            },
+            {
+              "id": "css-widows-orphans",
+              "name": {
+                "value": "css widows orphans"
+              }
+            },
+            {
+              "id": "css-writing-mode",
+              "name": {
+                "value": "css writing mode"
+              }
+            },
+            {
+              "id": "css-zoom",
+              "name": {
+                "value": "css zoom"
+              }
+            },
+            {
+              "id": "css3-attr",
+              "name": {
+                "value": "css3 attr"
+              }
+            },
+            {
+              "id": "css3-boxsizing",
+              "name": {
+                "value": "css3 boxsizing"
+              }
+            },
+            {
+              "id": "css3-colors",
+              "name": {
+                "value": "css3 colors"
+              }
+            },
+            {
+              "id": "css3-cursors-grab",
+              "name": {
+                "value": "css3 cursors grab"
+              }
+            },
+            {
+              "id": "css3-cursors-newer",
+              "name": {
+                "value": "css3 cursors newer"
+              }
+            },
+            {
+              "id": "css3-cursors",
+              "name": {
+                "value": "css3 cursors"
+              }
+            },
+            {
+              "id": "css3-tabsize",
+              "name": {
+                "value": "css3 tabsize"
+              }
+            },
+            {
+              "id": "currentcolor",
+              "name": {
+                "value": "currentcolor"
+              }
+            },
+            {
+              "id": "custom-elements",
+              "name": {
+                "value": "custom elements"
+              }
+            },
+            {
+              "id": "custom-elementsv1",
+              "name": {
+                "value": "custom elementsv1"
+              }
+            },
+            {
+              "id": "customevent",
+              "name": {
+                "value": "customevent"
+              }
+            },
+            {
+              "id": "datalist",
+              "name": {
+                "value": "datalist"
+              }
+            },
+            {
+              "id": "dataset",
+              "name": {
+                "value": "dataset"
+              }
+            },
+            {
+              "id": "datauri",
+              "name": {
+                "value": "datauri"
+              }
+            },
+            {
+              "id": "details",
+              "name": {
+                "value": "details"
+              }
+            },
+            {
+              "id": "deviceorientation",
+              "name": {
+                "value": "deviceorientation"
+              }
+            },
+            {
+              "id": "devicepixelratio",
+              "name": {
+                "value": "devicepixelratio"
+              }
+            },
+            {
+              "id": "dialog",
+              "name": {
+                "value": "dialog"
+              }
+            },
+            {
+              "id": "dispatchevent",
+              "name": {
+                "value": "dispatchevent"
+              }
+            },
+            {
+              "id": "do-not-track",
+              "name": {
+                "value": "do not track"
+              }
+            },
+            {
+              "id": "document-currentscript",
+              "name": {
+                "value": "document currentscript"
+              }
+            },
+            {
+              "id": "document-evaluate-xpath",
+              "name": {
+                "value": "document evaluate xpath"
+              }
+            },
+            {
+              "id": "document-execcommand",
+              "name": {
+                "value": "document execcommand"
+              }
+            },
+            {
+              "id": "document-scrollingelement",
+              "name": {
+                "value": "document scrollingelement"
+              }
+            },
+            {
+              "id": "documenthead",
+              "name": {
+                "value": "documenthead"
+              }
+            },
+            {
+              "id": "dom-manip-convenience",
+              "name": {
+                "value": "dom manip convenience"
+              }
+            },
+            {
+              "id": "dom-range",
+              "name": {
+                "value": "dom range"
+              }
+            },
+            {
+              "id": "domcontentloaded",
+              "name": {
+                "value": "domcontentloaded"
+              }
+            },
+            {
+              "id": "domfocusin-domfocusout-events",
+              "name": {
+                "value": "domfocusin domfocusout events"
+              }
+            },
+            {
+              "id": "dommatrix",
+              "name": {
+                "value": "dommatrix"
+              }
+            },
+            {
+              "id": "download",
+              "name": {
+                "value": "download"
+              }
+            },
+            {
+              "id": "dragndrop",
+              "name": {
+                "value": "dragndrop"
+              }
+            },
+            {
+              "id": "element-closest",
+              "name": {
+                "value": "element closest"
+              }
+            },
+            {
+              "id": "element-from-point",
+              "name": {
+                "value": "element from point"
+              }
+            },
+            {
+              "id": "eme",
+              "name": {
+                "value": "eme"
+              }
+            },
+            {
+              "id": "eot",
+              "name": {
+                "value": "eot"
+              }
+            },
+            {
+              "id": "es5",
+              "name": {
+                "value": "es5"
+              }
+            },
+            {
+              "id": "es6-class",
+              "name": {
+                "value": "es6 class"
+              }
+            },
+            {
+              "id": "es6-generators",
+              "name": {
+                "value": "es6 generators"
+              }
+            },
+            {
+              "id": "es6-module-dynamic-import",
+              "name": {
+                "value": "es6 module dynamic import"
+              }
+            },
+            {
+              "id": "es6-module",
+              "name": {
+                "value": "es6 module"
+              }
+            },
+            {
+              "id": "es6-number",
+              "name": {
+                "value": "es6 number"
+              }
+            },
+            {
+              "id": "es6-string-includes",
+              "name": {
+                "value": "es6 string includes"
+              }
+            },
+            {
+              "id": "eventsource",
+              "name": {
+                "value": "eventsource"
+              }
+            },
+            {
+              "id": "fetch",
+              "name": {
+                "value": "fetch"
+              }
+            },
+            {
+              "id": "fieldset-disabled",
+              "name": {
+                "value": "fieldset disabled"
+              }
+            },
+            {
+              "id": "fileapi",
+              "name": {
+                "value": "fileapi"
+              }
+            },
+            {
+              "id": "filereader",
+              "name": {
+                "value": "filereader"
+              }
+            },
+            {
+              "id": "filereadersync",
+              "name": {
+                "value": "filereadersync"
+              }
+            },
+            {
+              "id": "filesystem",
+              "name": {
+                "value": "filesystem"
+              }
+            },
+            {
+              "id": "flac",
+              "name": {
+                "value": "flac"
+              }
+            },
+            {
+              "id": "flexbox",
+              "name": {
+                "value": "flexbox"
+              }
+            },
+            {
+              "id": "flow-root",
+              "name": {
+                "value": "flow root"
+              }
+            },
+            {
+              "id": "focusin-focusout-events",
+              "name": {
+                "value": "focusin focusout events"
+              }
+            },
+            {
+              "id": "focusoptions-preventscroll",
+              "name": {
+                "value": "focusoptions preventscroll"
+              }
+            },
+            {
+              "id": "font-family-system-ui",
+              "name": {
+                "value": "font family system ui"
+              }
+            },
+            {
+              "id": "font-feature",
+              "name": {
+                "value": "font feature"
+              }
+            },
+            {
+              "id": "font-kerning",
+              "name": {
+                "value": "font kerning"
+              }
+            },
+            {
+              "id": "font-loading",
+              "name": {
+                "value": "font loading"
+              }
+            },
+            {
+              "id": "font-size-adjust",
+              "name": {
+                "value": "font size adjust"
+              }
+            },
+            {
+              "id": "font-smooth",
+              "name": {
+                "value": "font smooth"
+              }
+            },
+            {
+              "id": "font-unicode-range",
+              "name": {
+                "value": "font unicode range"
+              }
+            },
+            {
+              "id": "font-variant-alternates",
+              "name": {
+                "value": "font variant alternates"
+              }
+            },
+            {
+              "id": "font-variant-east-asian",
+              "name": {
+                "value": "font variant east asian"
+              }
+            },
+            {
+              "id": "fontface",
+              "name": {
+                "value": "fontface"
+              }
+            },
+            {
+              "id": "form-attribute",
+              "name": {
+                "value": "form attribute"
+              }
+            },
+            {
+              "id": "form-submit-attributes",
+              "name": {
+                "value": "form submit attributes"
+              }
+            },
+            {
+              "id": "form-validation",
+              "name": {
+                "value": "form validation"
+              }
+            },
+            {
+              "id": "forms",
+              "name": {
+                "value": "forms"
+              }
+            },
+            {
+              "id": "fullscreen",
+              "name": {
+                "value": "fullscreen"
+              }
+            },
+            {
+              "id": "gamepad",
+              "name": {
+                "value": "gamepad"
+              }
+            },
+            {
+              "id": "geolocation",
+              "name": {
+                "value": "geolocation"
+              }
+            },
+            {
+              "id": "getboundingclientrect",
+              "name": {
+                "value": "getboundingclientrect"
+              }
+            },
+            {
+              "id": "getcomputedstyle",
+              "name": {
+                "value": "getcomputedstyle"
+              }
+            },
+            {
+              "id": "getelementsbyclassname",
+              "name": {
+                "value": "getelementsbyclassname"
+              }
+            },
+            {
+              "id": "getrandomvalues",
+              "name": {
+                "value": "getrandomvalues"
+              }
+            },
+            {
+              "id": "hardwareconcurrency",
+              "name": {
+                "value": "hardwareconcurrency"
+              }
+            },
+            {
+              "id": "hashchange",
+              "name": {
+                "value": "hashchange"
+              }
+            },
+            {
+              "id": "heif",
+              "name": {
+                "value": "heif"
+              }
+            },
+            {
+              "id": "hevc",
+              "name": {
+                "value": "hevc"
+              }
+            },
+            {
+              "id": "hidden",
+              "name": {
+                "value": "hidden"
+              }
+            },
+            {
+              "id": "high-resolution-time",
+              "name": {
+                "value": "high resolution time"
+              }
+            },
+            {
+              "id": "history",
+              "name": {
+                "value": "history"
+              }
+            },
+            {
+              "id": "html-media-capture",
+              "name": {
+                "value": "html media capture"
+              }
+            },
+            {
+              "id": "html5semantic",
+              "name": {
+                "value": "html5semantic"
+              }
+            },
+            {
+              "id": "http-live-streaming",
+              "name": {
+                "value": "http live streaming"
+              }
+            },
+            {
+              "id": "http2",
+              "name": {
+                "value": "http2"
+              }
+            },
+            {
+              "id": "iframe-sandbox",
+              "name": {
+                "value": "iframe sandbox"
+              }
+            },
+            {
+              "id": "iframe-seamless",
+              "name": {
+                "value": "iframe seamless"
+              }
+            },
+            {
+              "id": "iframe-srcdoc",
+              "name": {
+                "value": "iframe srcdoc"
+              }
+            },
+            {
+              "id": "imagecapture",
+              "name": {
+                "value": "imagecapture"
+              }
+            },
+            {
+              "id": "ime",
+              "name": {
+                "value": "ime"
+              }
+            },
+            {
+              "id": "img-naturalwidth-naturalheight",
+              "name": {
+                "value": "img naturalwidth naturalheight"
+              }
+            },
+            {
+              "id": "imports",
+              "name": {
+                "value": "imports"
+              }
+            },
+            {
+              "id": "indeterminate-checkbox",
+              "name": {
+                "value": "indeterminate checkbox"
+              }
+            },
+            {
+              "id": "indexeddb",
+              "name": {
+                "value": "indexeddb"
+              }
+            },
+            {
+              "id": "indexeddb2",
+              "name": {
+                "value": "indexeddb2"
+              }
+            },
+            {
+              "id": "inline-block",
+              "name": {
+                "value": "inline block"
+              }
+            },
+            {
+              "id": "innertext",
+              "name": {
+                "value": "innertext"
+              }
+            },
+            {
+              "id": "input-autocomplete-onoff",
+              "name": {
+                "value": "input autocomplete onoff"
+              }
+            },
+            {
+              "id": "input-color",
+              "name": {
+                "value": "input color"
+              }
+            },
+            {
+              "id": "input-datetime",
+              "name": {
+                "value": "input datetime"
+              }
+            },
+            {
+              "id": "input-email-tel-url",
+              "name": {
+                "value": "input email tel url"
+              }
+            },
+            {
+              "id": "input-event",
+              "name": {
+                "value": "input event"
+              }
+            },
+            {
+              "id": "input-file-accept",
+              "name": {
+                "value": "input file accept"
+              }
+            },
+            {
+              "id": "input-file-directory",
+              "name": {
+                "value": "input file directory"
+              }
+            },
+            {
+              "id": "input-file-multiple",
+              "name": {
+                "value": "input file multiple"
+              }
+            },
+            {
+              "id": "input-inputmode",
+              "name": {
+                "value": "input inputmode"
+              }
+            },
+            {
+              "id": "input-minlength",
+              "name": {
+                "value": "input minlength"
+              }
+            },
+            {
+              "id": "input-number",
+              "name": {
+                "value": "input number"
+              }
+            },
+            {
+              "id": "input-pattern",
+              "name": {
+                "value": "input pattern"
+              }
+            },
+            {
+              "id": "input-placeholder",
+              "name": {
+                "value": "input placeholder"
+              }
+            },
+            {
+              "id": "input-range",
+              "name": {
+                "value": "input range"
+              }
+            },
+            {
+              "id": "input-search",
+              "name": {
+                "value": "input search"
+              }
+            },
+            {
+              "id": "input-selection",
+              "name": {
+                "value": "input selection"
+              }
+            },
+            {
+              "id": "insert-adjacent",
+              "name": {
+                "value": "insert adjacent"
+              }
+            },
+            {
+              "id": "insertadjacenthtml",
+              "name": {
+                "value": "insertadjacenthtml"
+              }
+            },
+            {
+              "id": "internationalization",
+              "name": {
+                "value": "internationalization"
+              }
+            },
+            {
+              "id": "intersectionobserver",
+              "name": {
+                "value": "intersectionobserver"
+              }
+            },
+            {
+              "id": "intrinsic-width",
+              "name": {
+                "value": "intrinsic width"
+              }
+            },
+            {
+              "id": "jpeg2000",
+              "name": {
+                "value": "jpeg2000"
+              }
+            },
+            {
+              "id": "jpegxr",
+              "name": {
+                "value": "jpegxr"
+              }
+            },
+            {
+              "id": "json",
+              "name": {
+                "value": "json"
+              }
+            },
+            {
+              "id": "kerning-pairs-ligatures",
+              "name": {
+                "value": "kerning pairs ligatures"
+              }
+            },
+            {
+              "id": "keyboardevent-charcode",
+              "name": {
+                "value": "keyboardevent charcode"
+              }
+            },
+            {
+              "id": "keyboardevent-code",
+              "name": {
+                "value": "keyboardevent code"
+              }
+            },
+            {
+              "id": "keyboardevent-getmodifierstate",
+              "name": {
+                "value": "keyboardevent getmodifierstate"
+              }
+            },
+            {
+              "id": "keyboardevent-key",
+              "name": {
+                "value": "keyboardevent key"
+              }
+            },
+            {
+              "id": "keyboardevent-location",
+              "name": {
+                "value": "keyboardevent location"
+              }
+            },
+            {
+              "id": "keyboardevent-which",
+              "name": {
+                "value": "keyboardevent which"
+              }
+            },
+            {
+              "id": "lazyload",
+              "name": {
+                "value": "lazyload"
+              }
+            },
+            {
+              "id": "let",
+              "name": {
+                "value": "let"
+              }
+            },
+            {
+              "id": "link-icon-png",
+              "name": {
+                "value": "link icon png"
+              }
+            },
+            {
+              "id": "link-icon-svg",
+              "name": {
+                "value": "link icon svg"
+              }
+            },
+            {
+              "id": "link-rel-dns-prefetch",
+              "name": {
+                "value": "link rel dns prefetch"
+              }
+            },
+            {
+              "id": "link-rel-preconnect",
+              "name": {
+                "value": "link rel preconnect"
+              }
+            },
+            {
+              "id": "link-rel-prefetch",
+              "name": {
+                "value": "link rel prefetch"
+              }
+            },
+            {
+              "id": "link-rel-preload",
+              "name": {
+                "value": "link rel preload"
+              }
+            },
+            {
+              "id": "link-rel-prerender",
+              "name": {
+                "value": "link rel prerender"
+              }
+            },
+            {
+              "id": "localecompare",
+              "name": {
+                "value": "localecompare"
+              }
+            },
+            {
+              "id": "matchesselector",
+              "name": {
+                "value": "matchesselector"
+              }
+            },
+            {
+              "id": "matchmedia",
+              "name": {
+                "value": "matchmedia"
+              }
+            },
+            {
+              "id": "mathml",
+              "name": {
+                "value": "mathml"
+              }
+            },
+            {
+              "id": "maxlength",
+              "name": {
+                "value": "maxlength"
+              }
+            },
+            {
+              "id": "media-attribute",
+              "name": {
+                "value": "media attribute"
+              }
+            },
+            {
+              "id": "media-fragments",
+              "name": {
+                "value": "media fragments"
+              }
+            },
+            {
+              "id": "media-session-api",
+              "name": {
+                "value": "media session api"
+              }
+            },
+            {
+              "id": "mediacapture-fromelement",
+              "name": {
+                "value": "mediacapture fromelement"
+              }
+            },
+            {
+              "id": "mediarecorder",
+              "name": {
+                "value": "mediarecorder"
+              }
+            },
+            {
+              "id": "mediasource",
+              "name": {
+                "value": "mediasource"
+              }
+            },
+            {
+              "id": "menu",
+              "name": {
+                "value": "menu"
+              }
+            },
+            {
+              "id": "meter",
+              "name": {
+                "value": "meter"
+              }
+            },
+            {
+              "id": "midi",
+              "name": {
+                "value": "midi"
+              }
+            },
+            {
+              "id": "minmaxwh",
+              "name": {
+                "value": "minmaxwh"
+              }
+            },
+            {
+              "id": "mp3",
+              "name": {
+                "value": "mp3"
+              }
+            },
+            {
+              "id": "mpeg-dash",
+              "name": {
+                "value": "mpeg dash"
+              }
+            },
+            {
+              "id": "mpeg4",
+              "name": {
+                "value": "mpeg4"
+              }
+            },
+            {
+              "id": "multibackgrounds",
+              "name": {
+                "value": "multibackgrounds"
+              }
+            },
+            {
+              "id": "multicolumn",
+              "name": {
+                "value": "multicolumn"
+              }
+            },
+            {
+              "id": "mutation-events",
+              "name": {
+                "value": "mutation events"
+              }
+            },
+            {
+              "id": "mutationobserver",
+              "name": {
+                "value": "mutationobserver"
+              }
+            },
+            {
+              "id": "namevalue-storage",
+              "name": {
+                "value": "namevalue storage"
+              }
+            },
+            {
+              "id": "nav-timing",
+              "name": {
+                "value": "nav timing"
+              }
+            },
+            {
+              "id": "navigator-language",
+              "name": {
+                "value": "navigator language"
+              }
+            },
+            {
+              "id": "netinfo",
+              "name": {
+                "value": "netinfo"
+              }
+            },
+            {
+              "id": "node-contains",
+              "name": {
+                "value": "node contains"
+              }
+            },
+            {
+              "id": "node-parentelement",
+              "name": {
+                "value": "node parentelement"
+              }
+            },
+            {
+              "id": "notifications",
+              "name": {
+                "value": "notifications"
+              }
+            },
+            {
+              "id": "object-fit",
+              "name": {
+                "value": "object fit"
+              }
+            },
+            {
+              "id": "object-observe",
+              "name": {
+                "value": "object observe"
+              }
+            },
+            {
+              "id": "object-values",
+              "name": {
+                "value": "object values"
+              }
+            },
+            {
+              "id": "objectrtc",
+              "name": {
+                "value": "objectrtc"
+              }
+            },
+            {
+              "id": "offline-apps",
+              "name": {
+                "value": "offline apps"
+              }
+            },
+            {
+              "id": "offscreencanvas",
+              "name": {
+                "value": "offscreencanvas"
+              }
+            },
+            {
+              "id": "ogg-vorbis",
+              "name": {
+                "value": "ogg vorbis"
+              }
+            },
+            {
+              "id": "ogv",
+              "name": {
+                "value": "ogv"
+              }
+            },
+            {
+              "id": "ol-reversed",
+              "name": {
+                "value": "ol reversed"
+              }
+            },
+            {
+              "id": "once-event-listener",
+              "name": {
+                "value": "once event listener"
+              }
+            },
+            {
+              "id": "online-status",
+              "name": {
+                "value": "online status"
+              }
+            },
+            {
+              "id": "opus",
+              "name": {
+                "value": "opus"
+              }
+            },
+            {
+              "id": "outline",
+              "name": {
+                "value": "outline"
+              }
+            },
+            {
+              "id": "pad-start-end",
+              "name": {
+                "value": "pad start end"
+              }
+            },
+            {
+              "id": "page-transition-events",
+              "name": {
+                "value": "page transition events"
+              }
+            },
+            {
+              "id": "pagevisibility",
+              "name": {
+                "value": "pagevisibility"
+              }
+            },
+            {
+              "id": "passive-event-listener",
+              "name": {
+                "value": "passive event listener"
+              }
+            },
+            {
+              "id": "path2d",
+              "name": {
+                "value": "path2d"
+              }
+            },
+            {
+              "id": "payment-request",
+              "name": {
+                "value": "payment request"
+              }
+            },
+            {
+              "id": "permissions-api",
+              "name": {
+                "value": "permissions api"
+              }
+            },
+            {
+              "id": "picture",
+              "name": {
+                "value": "picture"
+              }
+            },
+            {
+              "id": "ping",
+              "name": {
+                "value": "ping"
+              }
+            },
+            {
+              "id": "png-alpha",
+              "name": {
+                "value": "png alpha"
+              }
+            },
+            {
+              "id": "pointer-events",
+              "name": {
+                "value": "pointer events"
+              }
+            },
+            {
+              "id": "pointer",
+              "name": {
+                "value": "pointer"
+              }
+            },
+            {
+              "id": "pointerlock",
+              "name": {
+                "value": "pointerlock"
+              }
+            },
+            {
+              "id": "prefers-reduced-motion",
+              "name": {
+                "value": "prefers reduced motion"
+              }
+            },
+            {
+              "id": "progress",
+              "name": {
+                "value": "progress"
+              }
+            },
+            {
+              "id": "promises",
+              "name": {
+                "value": "promises"
+              }
+            },
+            {
+              "id": "proximity",
+              "name": {
+                "value": "proximity"
+              }
+            },
+            {
+              "id": "proxy",
+              "name": {
+                "value": "proxy"
+              }
+            },
+            {
+              "id": "publickeypinning",
+              "name": {
+                "value": "publickeypinning"
+              }
+            },
+            {
+              "id": "push-api",
+              "name": {
+                "value": "push api"
+              }
+            },
+            {
+              "id": "queryselector",
+              "name": {
+                "value": "queryselector"
+              }
+            },
+            {
+              "id": "readonly-attr",
+              "name": {
+                "value": "readonly attr"
+              }
+            },
+            {
+              "id": "referrer-policy",
+              "name": {
+                "value": "referrer policy"
+              }
+            },
+            {
+              "id": "registerprotocolhandler",
+              "name": {
+                "value": "registerprotocolhandler"
+              }
+            },
+            {
+              "id": "rel-noopener",
+              "name": {
+                "value": "rel noopener"
+              }
+            },
+            {
+              "id": "rel-noreferrer",
+              "name": {
+                "value": "rel noreferrer"
+              }
+            },
+            {
+              "id": "rellist",
+              "name": {
+                "value": "rellist"
+              }
+            },
+            {
+              "id": "rem",
+              "name": {
+                "value": "rem"
+              }
+            },
+            {
+              "id": "requestanimationframe",
+              "name": {
+                "value": "requestanimationframe"
+              }
+            },
+            {
+              "id": "requestidlecallback",
+              "name": {
+                "value": "requestidlecallback"
+              }
+            },
+            {
+              "id": "resizeobserver",
+              "name": {
+                "value": "resizeobserver"
+              }
+            },
+            {
+              "id": "resource-timing",
+              "name": {
+                "value": "resource timing"
+              }
+            },
+            {
+              "id": "rest-parameters",
+              "name": {
+                "value": "rest parameters"
+              }
+            },
+            {
+              "id": "rtcpeerconnection",
+              "name": {
+                "value": "rtcpeerconnection"
+              }
+            },
+            {
+              "id": "ruby",
+              "name": {
+                "value": "ruby"
+              }
+            },
+            {
+              "id": "run-in",
+              "name": {
+                "value": "run in"
+              }
+            },
+            {
+              "id": "same-site-cookie-attribute",
+              "name": {
+                "value": "same site cookie attribute"
+              }
+            },
+            {
+              "id": "screen-orientation",
+              "name": {
+                "value": "screen orientation"
+              }
+            },
+            {
+              "id": "script-async",
+              "name": {
+                "value": "script async"
+              }
+            },
+            {
+              "id": "script-defer",
+              "name": {
+                "value": "script defer"
+              }
+            },
+            {
+              "id": "scrollintoview",
+              "name": {
+                "value": "scrollintoview"
+              }
+            },
+            {
+              "id": "scrollintoviewifneeded",
+              "name": {
+                "value": "scrollintoviewifneeded"
+              }
+            },
+            {
+              "id": "sdch",
+              "name": {
+                "value": "sdch"
+              }
+            },
+            {
+              "id": "selection-api",
+              "name": {
+                "value": "selection api"
+              }
+            },
+            {
+              "id": "server-timing",
+              "name": {
+                "value": "server timing"
+              }
+            },
+            {
+              "id": "serviceworkers",
+              "name": {
+                "value": "serviceworkers"
+              }
+            },
+            {
+              "id": "setimmediate",
+              "name": {
+                "value": "setimmediate"
+              }
+            },
+            {
+              "id": "sha-2",
+              "name": {
+                "value": "sha 2"
+              }
+            },
+            {
+              "id": "shadowdom",
+              "name": {
+                "value": "shadowdom"
+              }
+            },
+            {
+              "id": "shadowdomv1",
+              "name": {
+                "value": "shadowdomv1"
+              }
+            },
+            {
+              "id": "sharedworkers",
+              "name": {
+                "value": "sharedworkers"
+              }
+            },
+            {
+              "id": "sni",
+              "name": {
+                "value": "sni"
+              }
+            },
+            {
+              "id": "spdy",
+              "name": {
+                "value": "spdy"
+              }
+            },
+            {
+              "id": "speech-recognition",
+              "name": {
+                "value": "speech recognition"
+              }
+            },
+            {
+              "id": "speech-synthesis",
+              "name": {
+                "value": "speech synthesis"
+              }
+            },
+            {
+              "id": "spellcheck-attribute",
+              "name": {
+                "value": "spellcheck attribute"
+              }
+            },
+            {
+              "id": "sql-storage",
+              "name": {
+                "value": "sql storage"
+              }
+            },
+            {
+              "id": "srcset",
+              "name": {
+                "value": "srcset"
+              }
+            },
+            {
+              "id": "stopimmediatepropagation",
+              "name": {
+                "value": "stopimmediatepropagation"
+              }
+            },
+            {
+              "id": "stream",
+              "name": {
+                "value": "stream"
+              }
+            },
+            {
+              "id": "streams",
+              "name": {
+                "value": "streams"
+              }
+            },
+            {
+              "id": "stricttransportsecurity",
+              "name": {
+                "value": "stricttransportsecurity"
+              }
+            },
+            {
+              "id": "style-scoped",
+              "name": {
+                "value": "style scoped"
+              }
+            },
+            {
+              "id": "subresource-integrity",
+              "name": {
+                "value": "subresource integrity"
+              }
+            },
+            {
+              "id": "svg-css",
+              "name": {
+                "value": "svg css"
+              }
+            },
+            {
+              "id": "svg-filters",
+              "name": {
+                "value": "svg filters"
+              }
+            },
+            {
+              "id": "svg-fonts",
+              "name": {
+                "value": "svg fonts"
+              }
+            },
+            {
+              "id": "svg-fragment",
+              "name": {
+                "value": "svg fragment"
+              }
+            },
+            {
+              "id": "svg-html",
+              "name": {
+                "value": "svg html"
+              }
+            },
+            {
+              "id": "svg-html5",
+              "name": {
+                "value": "svg html5"
+              }
+            },
+            {
+              "id": "svg-img",
+              "name": {
+                "value": "svg img"
+              }
+            },
+            {
+              "id": "svg-smil",
+              "name": {
+                "value": "svg smil"
+              }
+            },
+            {
+              "id": "svg",
+              "name": {
+                "value": "svg"
+              }
+            },
+            {
+              "id": "symbols",
+              "name": {
+                "value": "symbols"
+              }
+            },
+            {
+              "id": "tabindex-attr",
+              "name": {
+                "value": "tabindex attr"
+              }
+            },
+            {
+              "id": "template-literals",
+              "name": {
+                "value": "template literals"
+              }
+            },
+            {
+              "id": "template",
+              "name": {
+                "value": "template"
+              }
+            },
+            {
+              "id": "testfeat",
+              "name": {
+                "value": "testfeat"
+              }
+            },
+            {
+              "id": "text-decoration",
+              "name": {
+                "value": "text decoration"
+              }
+            },
+            {
+              "id": "text-emphasis",
+              "name": {
+                "value": "text emphasis"
+              }
+            },
+            {
+              "id": "text-overflow",
+              "name": {
+                "value": "text overflow"
+              }
+            },
+            {
+              "id": "text-size-adjust",
+              "name": {
+                "value": "text size adjust"
+              }
+            },
+            {
+              "id": "text-stroke",
+              "name": {
+                "value": "text stroke"
+              }
+            },
+            {
+              "id": "textcontent",
+              "name": {
+                "value": "textcontent"
+              }
+            },
+            {
+              "id": "textencoder",
+              "name": {
+                "value": "textencoder"
+              }
+            },
+            {
+              "id": "tls1-1",
+              "name": {
+                "value": "tls1 1"
+              }
+            },
+            {
+              "id": "tls1-2",
+              "name": {
+                "value": "tls1 2"
+              }
+            },
+            {
+              "id": "tls1-3",
+              "name": {
+                "value": "tls1 3"
+              }
+            },
+            {
+              "id": "token-binding",
+              "name": {
+                "value": "token binding"
+              }
+            },
+            {
+              "id": "touch",
+              "name": {
+                "value": "touch"
+              }
+            },
+            {
+              "id": "transforms2d",
+              "name": {
+                "value": "transforms2d"
+              }
+            },
+            {
+              "id": "transforms3d",
+              "name": {
+                "value": "transforms3d"
+              }
+            },
+            {
+              "id": "ttf",
+              "name": {
+                "value": "ttf"
+              }
+            },
+            {
+              "id": "typedarrays",
+              "name": {
+                "value": "typedarrays"
+              }
+            },
+            {
+              "id": "u2f",
+              "name": {
+                "value": "u2f"
+              }
+            },
+            {
+              "id": "unhandledrejection",
+              "name": {
+                "value": "unhandledrejection"
+              }
+            },
+            {
+              "id": "upgradeinsecurerequests",
+              "name": {
+                "value": "upgradeinsecurerequests"
+              }
+            },
+            {
+              "id": "url",
+              "name": {
+                "value": "url"
+              }
+            },
+            {
+              "id": "urlsearchparams",
+              "name": {
+                "value": "urlsearchparams"
+              }
+            },
+            {
+              "id": "use-strict",
+              "name": {
+                "value": "use strict"
+              }
+            },
+            {
+              "id": "user-select-none",
+              "name": {
+                "value": "user select none"
+              }
+            },
+            {
+              "id": "user-timing",
+              "name": {
+                "value": "user timing"
+              }
+            },
+            {
+              "id": "variable-fonts",
+              "name": {
+                "value": "variable fonts"
+              }
+            },
+            {
+              "id": "vibration",
+              "name": {
+                "value": "vibration"
+              }
+            },
+            {
+              "id": "video",
+              "name": {
+                "value": "video"
+              }
+            },
+            {
+              "id": "videotracks",
+              "name": {
+                "value": "videotracks"
+              }
+            },
+            {
+              "id": "viewport-units",
+              "name": {
+                "value": "viewport units"
+              }
+            },
+            {
+              "id": "wai-aria",
+              "name": {
+                "value": "wai aria"
+              }
+            },
+            {
+              "id": "wasm",
+              "name": {
+                "value": "wasm"
+              }
+            },
+            {
+              "id": "wav",
+              "name": {
+                "value": "wav"
+              }
+            },
+            {
+              "id": "wbr-element",
+              "name": {
+                "value": "wbr element"
+              }
+            },
+            {
+              "id": "web-animation",
+              "name": {
+                "value": "web animation"
+              }
+            },
+            {
+              "id": "web-app-manifest",
+              "name": {
+                "value": "web app manifest"
+              }
+            },
+            {
+              "id": "web-bluetooth",
+              "name": {
+                "value": "web bluetooth"
+              }
+            },
+            {
+              "id": "web-share",
+              "name": {
+                "value": "web share"
+              }
+            },
+            {
+              "id": "webgl",
+              "name": {
+                "value": "webgl"
+              }
+            },
+            {
+              "id": "webgl2",
+              "name": {
+                "value": "webgl2"
+              }
+            },
+            {
+              "id": "webm",
+              "name": {
+                "value": "webm"
+              }
+            },
+            {
+              "id": "webp",
+              "name": {
+                "value": "webp"
+              }
+            },
+            {
+              "id": "websockets",
+              "name": {
+                "value": "websockets"
+              }
+            },
+            {
+              "id": "webusb",
+              "name": {
+                "value": "webusb"
+              }
+            },
+            {
+              "id": "webvr",
+              "name": {
+                "value": "webvr"
+              }
+            },
+            {
+              "id": "webvtt",
+              "name": {
+                "value": "webvtt"
+              }
+            },
+            {
+              "id": "webworkers",
+              "name": {
+                "value": "webworkers"
+              }
+            },
+            {
+              "id": "will-change",
+              "name": {
+                "value": "will change"
+              }
+            },
+            {
+              "id": "woff",
+              "name": {
+                "value": "woff"
+              }
+            },
+            {
+              "id": "woff2",
+              "name": {
+                "value": "woff2"
+              }
+            },
+            {
+              "id": "word-break",
+              "name": {
+                "value": "word break"
+              }
+            },
+            {
+              "id": "wordwrap",
+              "name": {
+                "value": "wordwrap"
+              }
+            },
+            {
+              "id": "x-doc-messaging",
+              "name": {
+                "value": "x doc messaging"
+              }
+            },
+            {
+              "id": "x-frame-options",
+              "name": {
+                "value": "x frame options"
+              }
+            },
+            {
+              "id": "xhr2",
+              "name": {
+                "value": "xhr2"
+              }
+            },
+            {
+              "id": "xhtml",
+              "name": {
+                "value": "xhtml"
+              }
+            },
+            {
+              "id": "xhtmlsmil",
+              "name": {
+                "value": "xhtmlsmil"
+              }
+            },
+            {
+              "id": "xml-serializer",
+              "name": {
+                "value": "xml serializer"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Browsers",
+          "values": [
+            {
+              "id": "and_chr",
+              "name": {
+                "value": "Chrome for Android"
+              }
+            },
+            {
+              "id": "and_ff",
+              "name": {
+                "value": "Firefox for Android"
+              }
+            },
+            {
+              "id": "and_qq",
+              "name": {
+                "value": "QQ Browser for Android"
+              }
+            },
+            {
+              "id": "and_uc",
+              "name": {
+                "value": "UC Browser for Android"
+              }
+            },
+            {
+              "id": "android",
+              "name": {
+                "value": "Android"
+              }
+            },
+            {
+              "id": "baidu",
+              "name": {
+                "value": "Baidu"
+              }
+            },
+            {
+              "id": "bb",
+              "name": {
+                "value": "BlackBerry Browser"
+              }
+            },
+            {
+              "id": "chrome",
+              "name": {
+                "value": "Google Chrome"
+              }
+            },
+            {
+              "id": "edge",
+              "name": {
+                "value": "Microsoft Edge"
+              }
+            },
+            {
+              "id": "firefox",
+              "name": {
+                "value": "Mozilla Firefox"
+              }
+            },
+            {
+              "id": "ie",
+              "name": {
+                "value": "Internet Explorer"
+              }
+            },
+            {
+              "id": "ie_mob",
+              "name": {
+                "value": "Internet Explorer Mobile"
+              }
+            },
+            {
+              "id": "ios_saf",
+              "name": {
+                "value": "iOS Safari"
+              }
+            },
+            {
+              "id": "op_mini",
+              "name": {
+                "value": "Opera Mini"
+              }
+            },
+            {
+              "id": "op_mob",
+              "name": {
+                "value": "Opera Mobile"
+              }
+            },
+            {
+              "id": "opera",
+              "name": {
+                "value": "Opera"
+              }
+            },
+            {
+              "id": "safari",
+              "name": {
+                "value": "Safari"
+              }
+            },
+            {
+              "id": "samsung",
+              "name": {
+                "value": "Samsung Internet"
+              }
+            }
+          ]
         }
       ]
     }
-  ]
+  }
 }
