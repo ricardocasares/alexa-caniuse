@@ -1,6 +1,13 @@
+import * as api from "caniuse-api";
+
 export const REQUEST_TYPES = {
   LAUNCH_REQUEST: "LaunchRequest",
   INTENT_REQUEST: "IntentRequest"
+};
+
+export const RESOLUTION_STATUS = {
+  MATCH: "ER_SUCESS_MATCH",
+  NO_MATCH: "ER_SUCESS_NO_MATCH"
 };
 
 export const BROWSERS = {
