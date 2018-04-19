@@ -5,7 +5,7 @@
   "author": "Ricardo Casares <ricardocasares@gmail.com> (http://analogic.al/)",
   "license": "MIT",
   "scripts": {
-    "build": "tsc skill.ts --lib es6 --watch",
+    "build": "tsc skill.ts index.ts --lib es6 --watch",
     "start": "micro"
   },
   "dependencies": {
