@@ -2,10 +2,6 @@ import * as Alexa from "ask-sdk-core";
 import { IntentRequest } from "ask-sdk-model";
 import { REQUEST_TYPES } from "./constants";
 
-export interface guard {
-  (input: Alexa.HandlerInput): boolean | Promise<boolean>;
-}
-
 export const launch = check(isType(REQUEST_TYPES.LAUNCH_REQUEST));
 
 export const intents = (...names) =>
@@ -13,7 +9,7 @@ export const intents = (...names) =>
 
 export const sessionEnded = check(isType(REQUEST_TYPES.SESSION_ENDED_REQUEST));
 
-export function check(...fns: guard[]) {
+export function check(...fns) {
   return async (input: Alexa.HandlerInput): Promise<boolean> => {
     let idx = 0;
     let next: boolean | Promise<boolean>;
