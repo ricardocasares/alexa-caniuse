@@ -2,40 +2,41 @@ import * as Alexa from "ask-sdk-core";
 import { IntentRequest } from "ask-sdk-model";
 import { REQUEST_TYPES } from "./constants";
 
-export function intents(
-  ...names: string[]
-): (HandlerInput) => boolean | Promise<boolean> {
-  return function(input: Alexa.HandlerInput): boolean | Promise<boolean> {
-    const {
-      requestEnvelope: { request }
-    } = input;
+export interface guard {
+  (input: Alexa.HandlerInput): boolean | Promise<boolean>;
+}
 
-    const { type } = request;
+export const launch = check(isType(REQUEST_TYPES.LAUNCH_REQUEST));
 
-    if (type === REQUEST_TYPES.INTENT_REQUEST) {
-      const {
-        intent: { name }
-      } = request as IntentRequest;
+export const intents = (...names) =>
+  check(isType(REQUEST_TYPES.INTENT_REQUEST), isIntent(...names));
 
-      return names.includes(name);
-    }
+export const sessionEnded = check(isType(REQUEST_TYPES.SESSION_ENDED_REQUEST));
 
-    return false;
+export function check(...fns: guard[]) {
+  return async (input: Alexa.HandlerInput): Promise<boolean> => {
+    let idx = 0;
+    let next: boolean | Promise<boolean>;
+    let fn: (input: Alexa.HandlerInput) => boolean | Promise<boolean>;
+
+    do {
+      fn = fns[idx];
+      next = await fn(input);
+      idx++;
+    } while (next && idx < fns.length);
+
+    return next;
   };
 }
 
-export function launch(
-  fn?: (HandlerInput) => boolean | Promise<boolean>
-): (HandlerInput) => boolean | Promise<boolean> {
-  return function(input: Alexa.HandlerInput): boolean | Promise<boolean> {
-    const {
-      requestEnvelope: { request }
-    } = input;
+export function isType(type: string) {
+  return (input: Alexa.HandlerInput): boolean =>
+    input.requestEnvelope.request.type === type;
+}
 
-    const { type } = request;
-
-    if (type === REQUEST_TYPES.LAUNCH_REQUEST) return true;
-
-    return fn && fn(input);
-  };
+export function isIntent(...names: string[]) {
+  return (input: Alexa.HandlerInput): boolean =>
+    names.includes(
+      (input.requestEnvelope.request as IntentRequest).intent.name
+    );
 }

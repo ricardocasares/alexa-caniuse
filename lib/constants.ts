@@ -2,7 +2,8 @@ import * as api from "caniuse-api";
 
 export const REQUEST_TYPES = {
   LAUNCH_REQUEST: "LaunchRequest",
-  INTENT_REQUEST: "IntentRequest"
+  INTENT_REQUEST: "IntentRequest",
+  SESSION_ENDED_REQUEST: "SessionEndedRequest"
 };
 
 export const RESOLUTION_STATUS = {

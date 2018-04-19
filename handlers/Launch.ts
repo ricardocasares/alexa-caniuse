@@ -1,8 +1,8 @@
 import * as Alexa from "ask-sdk-core";
-import { launch, intents } from "../lib/guards";
+import { launch as canHandle } from "../lib/guards";
 
 const LaunchRequest: Alexa.RequestHandler = {
-  canHandle: launch(intents("Start")),
+  canHandle,
   handle(input) {
     return input.responseBuilder
       .speak("Welcome to Can I Use!")
