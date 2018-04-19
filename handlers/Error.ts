@@ -1,10 +1,10 @@
-import Alexa, { HandlerInput, ErrorHandler } from "ask-sdk-core";
+import * as Alexa from "ask-sdk-core";
 
-const ErrorHandler: ErrorHandler = {
-  canHandle(input: HandlerInput, error: Error) {
+const ErrorHandler: Alexa.ErrorHandler = {
+  canHandle(input: Alexa.HandlerInput, error: Error) {
     return true;
   },
-  handle(input: HandlerInput, error: Error) {
+  handle(input: Alexa.HandlerInput, error: Error) {
     console.log(error);
     return input.responseBuilder.getResponse();
   }

@@ -1,10 +1,10 @@
 import * as api from "caniuse-api";
-import { RequestHandler } from "ask-sdk-core";
+import * as Alexa from "ask-sdk-core";
 import { IntentRequest } from "ask-sdk-model";
 import { intents } from "../lib/guards";
 import { toSlotID } from "../lib/helpers";
 
-const CanIUseRequest: RequestHandler = {
+const CanIUseRequest: Alexa.RequestHandler = {
   canHandle: intents("CanIUse"),
   handle({ responseBuilder, requestEnvelope: { request } }) {
     const {

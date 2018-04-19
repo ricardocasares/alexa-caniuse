@@ -1,7 +1,7 @@
-import { RequestHandler } from "ask-sdk-core";
+import * as Alexa from "ask-sdk-core";
 import { launch, intents } from "../lib/guards";
 
-const LaunchRequest: RequestHandler = {
+const LaunchRequest: Alexa.RequestHandler = {
   canHandle: launch(intents("Start")),
   handle(input) {
     return input.responseBuilder

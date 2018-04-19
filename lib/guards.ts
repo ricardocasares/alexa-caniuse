@@ -1,11 +1,11 @@
-import { HandlerInput } from "ask-sdk-core";
+import * as Alexa from "ask-sdk-core";
 import { IntentRequest } from "ask-sdk-model";
 import { REQUEST_TYPES } from "./constants";
 
 export function intents(
   ...names: string[]
 ): (HandlerInput) => boolean | Promise<boolean> {
-  return function(input: HandlerInput): boolean | Promise<boolean> {
+  return function(input: Alexa.HandlerInput): boolean | Promise<boolean> {
     const {
       requestEnvelope: { request }
     } = input;
@@ -27,7 +27,7 @@ export function intents(
 export function launch(
   fn?: (HandlerInput) => boolean | Promise<boolean>
 ): (HandlerInput) => boolean | Promise<boolean> {
-  return function(input: HandlerInput): boolean | Promise<boolean> {
+  return function(input: Alexa.HandlerInput): boolean | Promise<boolean> {
     const {
       requestEnvelope: { request }
     } = input;
