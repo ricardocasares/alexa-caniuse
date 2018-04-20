@@ -4,6 +4,9 @@
   "main": ".build/index.js",
   "author": "Ricardo Casares <ricardocasares@gmail.com> (http://analogic.al/)",
   "license": "MIT",
+  "now": {
+    "alias": "kenny.alexa.analogic.al"
+  },
   "scripts": {
     "dev": "run-s tsc watch",
     "watch": "run-p tsc:watch start:watch",

@@ -3,7 +3,7 @@ import { createBrowsers, createFeatures } from "./lib/helpers";
 export default {
   interactionModel: {
     languageModel: {
-      invocationName: "can i use",
+      invocationName: "kenny",
       intents: [
         {
           name: "AMAZON.CancelIntent",
