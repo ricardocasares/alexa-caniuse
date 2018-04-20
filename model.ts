@@ -36,6 +36,9 @@ export const model = {
           ],
           samples: [
             "can i use {feature}",
+            "if can use {feature}",
+            "if can use {feature} in {browser}",
+            "if can use {feature} in {browser} {version}",
             "can i use {feature} in {browser} {version}",
             "can i use {feature} in {browser} version {version}",
             "can i use {feature} on {browser}",
