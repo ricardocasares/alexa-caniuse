@@ -45,6 +45,51 @@
           ]
         }
       ],
+      "dialog": {
+        "intents": [
+          {
+            "name": "CanIUse",
+            "confirmationRequired": false,
+            "prompts": {},
+            "slots": [
+              {
+                "name": "feature",
+                "type": "Features",
+                "confirmationRequired": false,
+                "elicitationRequired": true,
+                "prompts": {
+                  "elicitation": "Elicit.Slot.432100908134.312193826766"
+                }
+              },
+              {
+                "name": "browser",
+                "type": "Browsers",
+                "confirmationRequired": false,
+                "elicitationRequired": false,
+                "prompts": {}
+              },
+              {
+                "name": "version",
+                "type": "AMAZON.NUMBER",
+                "confirmationRequired": false,
+                "elicitationRequired": false,
+                "prompts": {}
+              }
+            ]
+          }
+        ]
+      },
+      "prompts": [
+        {
+          "id": "Elicit.Slot.432100908134.312193826766",
+          "variations": [
+            {
+              "type": "PlainText",
+              "value": "what feature would you like to check?"
+            }
+          ]
+        }
+      ],
       "types": [
         {
           "name": "Features",
