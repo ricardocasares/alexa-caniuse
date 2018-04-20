@@ -10,14 +10,14 @@ export const intents = (...names) =>
 export const sessionEnded = check(isType(REQUEST_TYPES.SESSION_ENDED_REQUEST));
 
 export function check(...fns) {
-  return async (input: Alexa.HandlerInput): Promise<boolean> => {
+  return (input: Alexa.HandlerInput): boolean | Promise<boolean> => {
     let idx = 0;
     let next: boolean | Promise<boolean>;
     let fn: (input: Alexa.HandlerInput) => boolean | Promise<boolean>;
 
     do {
       fn = fns[idx];
-      next = await fn(input);
+      next = fn(input);
       idx++;
     } while (next && idx < fns.length);
 
@@ -26,12 +26,12 @@ export function check(...fns) {
 }
 
 export function isType(type: string) {
-  return (input: Alexa.HandlerInput): boolean =>
+  return (input: Alexa.HandlerInput): boolean | Promise<boolean> =>
     input.requestEnvelope.request.type === type;
 }
 
 export function isIntent(...names: string[]) {
-  return (input: Alexa.HandlerInput): boolean =>
+  return (input: Alexa.HandlerInput): boolean | Promise<boolean> =>
     names.includes(
       (input.requestEnvelope.request as IntentRequest).intent.name
     );
