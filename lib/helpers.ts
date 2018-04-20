@@ -1,39 +1,60 @@
 import * as api from "caniuse-api";
 import { BROWSERS, RESOLUTION_STATUS } from "./constants";
+import { Slot } from "ask-sdk-model";
 
-export function toSlotID(slot) {
-  // THIS IS INSECURE @TODO: MAKE CHECKS FOR MISSING STUFF AND FAILOVERS
-  const { name, resolutions } = slot;
-  const { resolutionsPerAuthority } = resolutions;
-  const [resolution] = resolutionsPerAuthority;
-  const {
-    values,
-    status: { code }
-  } = resolution;
-  const [{ value }] = values;
-
-  return { value: value.id, name: value.name };
+interface ResolvedSlot {
+  id?: any;
+  name: string;
+  match: string;
+  value: string;
+  resolved: boolean;
 }
 
-export function featureResolver(feature) {
-  let { name, value, resolutions } = feature;
+export function resolveSlots(slots): Record<string, ResolvedSlot> {
+  return Object.keys(slots).reduce((resolved, key) => {
+    const { name, value, resolutions } = slots[key];
 
-  if (!resolutions) return { name, value };
-
-  const { resolutionsPerAuthority } = resolutions;
-  const [
-    {
-      values,
-      status: { code }
+    if (!resolutions) {
+      return {
+        ...resolved,
+        [name]: { name, match: value, value, resolved: false }
+      };
     }
-  ] = resolutionsPerAuthority;
 
-  if (code === RESOLUTION_STATUS.MATCH) {
-    const [{ value }] = values;
-    return { name: value.name, id: value.id };
-  }
+    const { resolutionsPerAuthority = [] } = resolutions;
+    const [
+      {
+        values,
+        status: { code }
+      }
+    ] = resolutionsPerAuthority;
 
-  return { name: value, id: featureMatch(value) };
+    if (code === RESOLUTION_STATUS.NO_MATCH) {
+      return {
+        ...resolved,
+        [name]: { name, match: value, value, resolved: false }
+      };
+    }
+
+    const [{ value: slot }] = values;
+
+    return {
+      ...resolved,
+      [name]: {
+        name,
+        id: slot.id,
+        value: slot.name,
+        match: value,
+        resolved: true
+      }
+    };
+  }, {});
+}
+
+export function featureResolver(feature): ResolvedSlot {
+  let { name, match, value } = feature;
+
+  return { name, match: value, value, id: featureMatch(value), resolved: true };
 }
 
 function featureMatch(str) {

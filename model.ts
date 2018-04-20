@@ -22,19 +22,26 @@ export default {
           slots: [
             {
               name: "feature",
-              type: "Features"
+              type: "Features",
+              samples: ["{feature}"]
             },
             {
               name: "browser",
               type: "Browsers"
+            },
+            {
+              name: "version",
+              type: "AMAZON.NUMBER"
             }
           ],
           samples: [
-            "for {feature}",
-            "if I can use {feature}",
             "can i use {feature}",
-            "is {feature} supported in {browser}",
-            "{feature} in {browser}"
+            "can i use {feature} in {browser} {version}",
+            "can i use {feature} in {browser} version {version}",
+            "can i use {feature} on {browser}",
+            "can i use {feature} in {browser}",
+            "can i use {feature} on {browser} version {version}",
+            "can i use {feature} on {browser} {version}"
           ]
         }
       ],

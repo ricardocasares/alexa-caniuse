@@ -7,8 +7,8 @@ export const REQUEST_TYPES = {
 };
 
 export const RESOLUTION_STATUS = {
-  MATCH: "ER_SUCESS_MATCH",
-  NO_MATCH: "ER_SUCESS_NO_MATCH"
+  MATCH: "ER_SUCCESS_MATCH",
+  NO_MATCH: "ER_SUCCESS_NO_MATCH"
 };
 
 export const BROWSERS = {

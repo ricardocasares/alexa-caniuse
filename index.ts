@@ -10,5 +10,5 @@ export default async req => {
       if (err) return reject(err);
       resolve(data);
     })
-  );
+  ).catch(console.log);
 };
