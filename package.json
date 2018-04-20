@@ -5,7 +5,7 @@
   "author": "Ricardo Casares <ricardocasares@gmail.com> (http://analogic.al/)",
   "license": "MIT",
   "now": {
-    "alias": "kenny.alexa.analogic.al"
+    "alias": "kenny.analogic.al"
   },
   "scripts": {
     "dev": "run-s tsc watch",

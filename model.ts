@@ -45,6 +45,7 @@ export const model = {
           ]
         }
       ],
+      types: [createFeatures(), createBrowsers()],
       dialog: {
         intents: [
           {
@@ -89,8 +90,7 @@ export const model = {
             }
           ]
         }
-      ],
-      types: [createFeatures(), createBrowsers()]
+      ]
     }
   }
 };
