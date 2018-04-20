@@ -15,7 +15,7 @@
     "tsc:watch": "tsc --watch",
     "start": "micro",
     "start:watch": "micro-dev",
-    "model": "node .build/generator.js > model.json"
+    "model": "node .build/model.js > model.json"
   },
   "dependencies": {
     "ask-sdk-core": "^2.0.0",

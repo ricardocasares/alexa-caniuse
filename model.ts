@@ -1,6 +1,6 @@
 import { createBrowsers, createFeatures } from "./lib/helpers";
 
-export default {
+export const model = {
   interactionModel: {
     languageModel: {
       invocationName: "kenny",
@@ -94,3 +94,7 @@ export default {
     }
   }
 };
+
+export default model;
+
+console.log(JSON.stringify(model, null, 2));
